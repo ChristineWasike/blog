@@ -1,0 +1,96 @@
+header {
+    /* background-color: white; */
+    background-color: rgb(22, 21, 21);
+}
+
+
+.admin-wrapper {
+    display: flex;
+    height: calc(100% - 66px);
+    
+}
+
+.admin-wrapper .left-sidebar {
+    flex: 2;
+    height: 35.65rem;
+    background-color: rgb(4, 4, 77);
+}
+
+.admin-wrapper .left-sidebar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.admin-wrapper .left-sidebar ul li a {
+    padding: 18px;
+    display: block;
+    border-bottom: 2px solid rgb(18, 18, 63);
+    color: white;
+    text-decoration: none;
+
+}
+ 
+.admin-wrapper .left-sidebar ul li a:hover{
+    background-color:  rgb(18, 18, 63);
+}
+
+.admin-wrapper .admin-content {
+    flex: 8;
+    height: 80vh;
+    padding: 2.5rem 5rem 5rem;
+    overflow-y: auto;
+}
+
+.admin-content .page-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgb(238, 236, 236);
+}
+
+#edit{
+    color: green;
+    padding: .5rem;
+}
+#delete{
+    color: red;
+    padding: .5rem;
+}
+
+#publish{
+    color: blue;
+    padding: .5rem;
+}
+
+#edit:hover{
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    border-radius: .2rem;
+}
+
+#delete:hover{
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    border-radius: .2rem;
+}
+
+
+#publish:hover{
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    border-radius: .2rem;
+}

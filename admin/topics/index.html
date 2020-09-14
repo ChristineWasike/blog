@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog| Manage Tags</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Work Sans Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Logo">
+        </div>
+        <i id="menu" class="fa fa-bars menu-toggle fa-2x"></i>
+
+        <ul class="nav">
+            <li>
+                <a id="user" href="#">
+                    <i class="fa fa-user" style="font-size: large; color: white;"></i>
+                    Nji Mbitaownu
+                    <i class="fa fa-chevron-down" style="font-size: .8em; color: white;"></i>
+                </a>
+
+                <ul>
+                    <li><a href="#" class="logout">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </header>
+
+    <!-- Admin Page Wrapper -->
+    <div class="admin-wrapper">
+
+        <!-- Left side bar -->
+        <div class="left-sidebar">
+            <ul>
+                <li><a href="../posts/index.html">Manage Posts</a></li>
+                <li><a href="../users/index.html">Manage Users</a></li>
+                <li><a href="index.html">Manage Tags</a></li>
+            </ul>
+        </div>
+
+
+        <!--  Admin Content-->
+        <div class="admin-content">
+            <div class="button-group">
+                <a href="create.html" class="btn btn-outline-info">Add a Tag</a>
+                <a href="index.html" class="btn btn-outline-info">Manage Tags</a>
+            </div>
+
+            <div class="content">
+                <h2 class="page-title">Manage Tags</h2>
+
+                <table>
+                    <thead>
+                        <th></th>
+                        <th>Name</th>
+                        <th colspan="2">Action</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Life lessons</td>
+                            <td><a href="" id="edit">Edit</a></td>
+                            <td><a href="" id="delete">Delete</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Self motivational</td>
+                            <td><a href="" id="edit">Edit</a></td>
+                            <td><a href="" id="delete">Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script src="../../js/scripts.js"></script>
+</body>
+
+</html>
