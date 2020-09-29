@@ -1,6 +1,6 @@
 header {
     /* background-color: white; */
-    background-color: rgb(22, 21, 21);
+    background-color: rgb(40, 46, 49);
 }
 
 
@@ -12,8 +12,8 @@ header {
 
 .admin-wrapper .left-sidebar {
     flex: 2;
-    height: 35.65rem;
-    background-color: rgb(4, 4, 77);
+    height: 35.7rem;
+    background-color: rgb(51, 58, 62);
 }
 
 .admin-wrapper .left-sidebar ul {
@@ -25,19 +25,19 @@ header {
 .admin-wrapper .left-sidebar ul li a {
     padding: 18px;
     display: block;
-    border-bottom: 2px solid rgb(18, 18, 63);
+    border-bottom: 2px solid rgb(64, 67, 71);
     color: white;
     text-decoration: none;
 
 }
  
 .admin-wrapper .left-sidebar ul li a:hover{
-    background-color:  rgb(18, 18, 63);
+    background-color:  rgb(64, 67, 71);
 }
 
 .admin-wrapper .admin-content {
     flex: 8;
-    height: 80vh;
+    height: vh;
     padding: 2.5rem 5rem 5rem;
     overflow-y: auto;
 }
