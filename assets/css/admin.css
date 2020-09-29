@@ -14,6 +14,9 @@ header {
     flex: 2;
     height: 35.7rem;
     background-color: rgb(51, 58, 62);
+    /*position: fixed;*/
+    /*z-index: 1;*/
+    /*overflow-x: hidden;*/
 }
 
 .admin-wrapper .left-sidebar ul {
@@ -37,7 +40,7 @@ header {
 
 .admin-wrapper .admin-content {
     flex: 8;
-    height: vh;
+    height: 35.7vh;
     padding: 2.5rem 5rem 5rem;
     overflow-y: auto;
 }

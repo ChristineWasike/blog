@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog| Add Post</title>
+    <title>Blog| Add User</title>
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,8 +17,8 @@
     <!-- Work Sans Link -->
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/css/admin.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
     <header>
 
         <div class="logo">
-            <img src="../../img/logo.png" alt="Logo">
+            <img src="../../../assets/img/logo.png" alt="Logo">
         </div>
         <i id="menu" class="fa fa-bars menu-toggle fa-2x"></i>
 
@@ -53,8 +53,8 @@
         <!-- Left side bar -->
         <div class="left-sidebar">
             <ul>
-                <li><a href="index.html">Add Post</a></li>
-                <li><a href="../users/index.html">Manage Users</a></li>
+                <li><a href="../posts/index.html">Add Post</a></li>
+                <li><a href="index.html">Manage Users</a></li>
                 <li><a href="../topics/index.html">Manage Tags</a></li>
             </ul>
         </div>
@@ -63,32 +63,36 @@
         <!--  Admin Content-->
         <div class="admin-content">
             <div class="button-group">
-                <a href="create.html" class="btn btn-outline-info">Add a Post</a>
-                <a href="index.html" class="btn btn-outline-info">Manage Posts</a>
+                <a href="create.html" class="btn btn-outline-info">Add a User</a>
+                <a href="index.html" class="btn btn-outline-info">Manage Users</a>
             </div>
 
             <div class="content">
-                <h2 class="page-title">Create Post</h2>
+                <h2 class="page-title">Add a User</h2>
 
                 <form action="create.html" method="POST">
                     <div class="form-group">
-                        <label for="title">Title</label>
-                        <input type="text" class="form-control" name="title" id="text_input">
+                        <label for="username">Username</label>
+                        <input required type="text" class="form-control" name="name" id="username">
                     </div>
 
                     <div class="form-group">
-                        <label for="body">Body</label>
-                        <textarea name="body" id="body"></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="image">Image</label>
-                        <input type="file" name="image" class="form-control">
+                        <label for="email">Email</label>
+                        <input required type="email" class="form-control" name="email" id="email">
                     </div>
 
                     <div class="form-group">
-                        <label for="tags">Tags</label>
-                        <input type="text" class="form-control" name="tags" id="tags" value="life" data-role="tagsinput">
+                        <label for="password">Password</label>
+                        <input type="text" type="password" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">User Type</label>
+                        <select name="user_type" id="user_type" class="form-control">
+                            <option value="Administrator">Administrator</option>
+                            <option value="Developer">Developer</option>
+                        </select>
+
                     </div>
 
                     <div class="button-submit">
@@ -108,7 +112,7 @@
     <script src="https://cdn.ckeditor.com/ckeditor5/22.0.0/classic/ckeditor.js"></script>
 
     <!-- JavaScript -->
-    <script src="../../js/scripts.js"></script>
+    <script src="../../../assets/js/scripts.js"></script>
 </body>
 
 </html>

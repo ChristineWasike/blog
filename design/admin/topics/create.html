@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog| Add User</title>
+    <title>Blog| Add Tag</title>
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,8 +17,8 @@
     <!-- Work Sans Link -->
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/css/admin.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
     <header>
 
         <div class="logo">
-            <img src="../../img/logo.png" alt="Logo">
+            <img src="../../../assets/img/logo.png" alt="Logo">
         </div>
         <i id="menu" class="fa fa-bars menu-toggle fa-2x"></i>
 
@@ -54,8 +54,8 @@
         <div class="left-sidebar">
             <ul>
                 <li><a href="../posts/index.html">Add Post</a></li>
-                <li><a href="index.html">Manage Users</a></li>
-                <li><a href="../topics/index.html">Manage Tags</a></li>
+                <li><a href="../users/index.html">Manage Users</a></li>
+                <li><a href="index.html">Manage Tags</a></li>
             </ul>
         </div>
 
@@ -63,36 +63,22 @@
         <!--  Admin Content-->
         <div class="admin-content">
             <div class="button-group">
-                <a href="create.html" class="btn btn-outline-info">Add a User</a>
-                <a href="index.html" class="btn btn-outline-info">Manage Users</a>
+                <a href="create.html" class="btn btn-outline-info">Add a Tag</a>
+                <a href="index.html" class="btn btn-outline-info">Manage Tags</a>
             </div>
 
             <div class="content">
-                <h2 class="page-title">Add a User</h2>
+                <h2 class="page-title">Create a Tag</h2>
 
                 <form action="create.html" method="POST">
                     <div class="form-group">
-                        <label for="username">Username</label>
-                        <input required type="text" class="form-control" name="name" id="username">
+                        <label for="title">Name</label>
+                        <input type="text" class="form-control" name="name" id="name_input">
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input required type="email" class="form-control" name="email" id="email">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="text" type="password" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="role">User Type</label>
-                        <select name="user_type" id="user_type" class="form-control">
-                            <option value="Administrator">Administrator</option>
-                            <option value="Developer">Developer</option>
-                        </select>
-
+                        <label for="tags">Description</label>
+                        <textarea name="description" id="body"></textarea>
                     </div>
 
                     <div class="button-submit">
@@ -112,7 +98,7 @@
     <script src="https://cdn.ckeditor.com/ckeditor5/22.0.0/classic/ckeditor.js"></script>
 
     <!-- JavaScript -->
-    <script src="../../js/scripts.js"></script>
+    <script src="../../../assets/js/scripts.js"></script>
 </body>
 
 </html>
