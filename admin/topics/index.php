@@ -1,13 +1,14 @@
 <?php
 include("../../path.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog| Add Post</title>
+    <title>Blog| Manage Tags</title>
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -27,50 +28,47 @@ include("../../path.php");
 <body>
 
 <!-- Admin Header -->
-<?php include(ROOT_PATH . "/app/includes/adminHeader.php")?>
+<?php include(ROOT_PATH . "/app/includes/adminHeader.php") ?>
+
 
 <!-- Admin Page Wrapper -->
 <div class="admin-wrapper">
 
     <!-- Left side bar -->
-    <?php include(ROOT_PATH . "/app/includes/adminSideBar.php")?>
-
+    <?php include(ROOT_PATH . "/app/includes/adminSideBar.php") ?>
 
     <!--  Admin Content-->
     <div class="admin-content">
         <div class="button-group">
-            <a href="create.php" class="btn btn-outline-info">Add a Post</a>
-            <a href="index.php" class="btn btn-outline-info">Manage Posts</a>
+            <a href="create.php" class="btn btn-outline-info">Add a Tag</a>
+            <a href="index.php" class="btn btn-outline-info">Manage Tags</a>
         </div>
 
         <div class="content">
-            <h2 class="page-title">Create a Post</h2>
+            <h2 class="page-title">Manage Tags</h2>
 
-            <form action="create.php" method="POST">
-                <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" class="form-control" name="title" id="text_input">
-                </div>
+            <table>
+                <thead>
+                <th></th>
+                <th>Name</th>
+                <th colspan="2">Action</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Life lessons</td>
+                    <td><a href="" id="edit">Edit</a></td>
+                    <td><a href="" id="delete">Delete</a></td>
+                </tr>
 
-                <div class="form-group">
-                    <label for="body">Body</label>
-                    <textarea name="body" id="body"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="image">Image</label>
-                    <input type="file" name="image" class="form-control">
-                </div>
-
-                <div class="form-group">
-                    <label for="tags">Tags</label>
-                    <input type="text" class="form-control" name="tags" id="tags" value="life" data-role="tagsinput">
-                </div>
-
-                <div class="button-submit">
-                    <button type="submit" class="btn btn-primary">Done</button>
-                </div>
-            </form>
+                <tr>
+                    <td>2</td>
+                    <td>Self motivational</td>
+                    <td><a href="" id="edit">Edit</a></td>
+                    <td><a href="" id="delete">Delete</a></td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 

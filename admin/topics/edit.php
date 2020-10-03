@@ -1,13 +1,14 @@
 <?php
 include("../../path.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog| Add Post</title>
+    <title>Blog| Edit Tag</title>
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -29,42 +30,32 @@ include("../../path.php");
 <!-- Admin Header -->
 <?php include(ROOT_PATH . "/app/includes/adminHeader.php")?>
 
+
 <!-- Admin Page Wrapper -->
 <div class="admin-wrapper">
 
     <!-- Left side bar -->
     <?php include(ROOT_PATH . "/app/includes/adminSideBar.php")?>
 
-
     <!--  Admin Content-->
     <div class="admin-content">
         <div class="button-group">
-            <a href="create.php" class="btn btn-outline-info">Add a Post</a>
-            <a href="index.php" class="btn btn-outline-info">Manage Posts</a>
+            <a href="create.php" class="btn btn-outline-info">Add a Tag</a>
+            <a href="index.php" class="btn btn-outline-info">Manage Tags</a>
         </div>
 
         <div class="content">
-            <h2 class="page-title">Create a Post</h2>
+            <h2 class="page-title">Edit a Tag</h2>
 
             <form action="create.php" method="POST">
                 <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" class="form-control" name="title" id="text_input">
+                    <label for="title">Name</label>
+                    <input type="text" class="form-control" name="name" id="name_input">
                 </div>
 
                 <div class="form-group">
-                    <label for="body">Body</label>
-                    <textarea name="body" id="body"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="image">Image</label>
-                    <input type="file" name="image" class="form-control">
-                </div>
-
-                <div class="form-group">
-                    <label for="tags">Tags</label>
-                    <input type="text" class="form-control" name="tags" id="tags" value="life" data-role="tagsinput">
+                    <label for="tags">Description</label>
+                    <textarea name="description" id="body"></textarea>
                 </div>
 
                 <div class="button-submit">
