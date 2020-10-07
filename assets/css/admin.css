@@ -42,6 +42,17 @@ header {
     overflow-y: auto;
 }
 
+/* New ONE! */
+.msg-error{
+    color: #4c3333;
+    background-color: rgb(239, 148, 148);
+    border: 1px #4c3333 solid;
+    border-radius: 5px;
+    text-align: center;
+    list-style: none;
+    padding: .8rem 1rem;
+}
+
 .admin-content .page-title {
     text-align: center;
     margin-bottom: 1.5rem;

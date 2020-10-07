@@ -66,16 +66,58 @@ function selectOne($table, $conditions){
 
 }
 
-$conditions = [
-    'admin' => 1,
-    'username' => 'NjiMbitaownu'
-];
 
-//$users = selectAll('users');
+// Create
+function create($table, $data){
+    global $conn;
 
-$specific_users = selectOne('users', $conditions);
+    $sql = "INSERT INTO $table SET";
 
-displayData($specific_users);
+    $index = 0;
+    foreach ($data as $key => $value) {
+        if ($index == 0) {
+            $sql = $sql . " $key = ?";
+        } else {
+            $sql = $sql . ", $key = ?";
+        }
+        $index++;
+    }
+
+    $stmt = executeQuery($sql, $data);
+    return $stmt->insert_id;
+}
+
+// Update
+function update($table, $id, $data){
+    global $conn;
+
+    $sql = "UPDATE $table SET";
+
+    $index = 0;
+    foreach ($data as $key => $value) {
+        if ($index == 0) {
+            $sql = $sql . " $key = ?";
+        } else {
+            $sql = $sql . ", $key = ?";
+        }
+        $index++;
+    }
+
+    $sql = $sql . " WHERE id = ?";
+    $data['id'] = $id;
+    $stmt = executeQuery($sql, $data);
+    return $stmt->affected_rows;
+}
+
+// Delete
+function delete($table, $id){
+    global $conn;
+    $sql = "DELETE FROM $table WHERE id = ?";
+    $data['id'] = $id;
+    $stmt = executeQuery($sql, ['id' => $id]);
+    return $stmt->affected_rows;
+}
+
 
 
 

@@ -1,0 +1,31 @@
+<?php
+
+function validateUser($user){
+    $errors = array();
+
+    if (empty($user['username'])){
+        array_push($errors, 'username required');
+
+    }
+
+    if (empty($user['email'])){
+        array_push($errors, 'email required');
+
+    }
+
+    if (empty($user['password'])){
+        array_push($errors, 'password required');
+
+    }
+
+    if (empty($user['conf_password'])){
+        array_push($errors, 'password confirmation required');
+    }
+
+    if ($user['conf_password'] != $user['password']){
+        array_push($errors, 'passwords don\'t match');
+
+    }
+
+    return $errors;
+}
