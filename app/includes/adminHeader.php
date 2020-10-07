@@ -2,7 +2,7 @@
 
 <header>
 
-    <a href="<?php echo BASE_URL ."index.php"?>" class="logo">
+    <a href="<?php echo BASE_URL ."/index.php"?>" class="logo">
         <img src="../../assets/img/logo.png" alt="Logo">
     </a>
     <i id="menu" class="fa fa-bars menu-toggle fa-2x"></i>

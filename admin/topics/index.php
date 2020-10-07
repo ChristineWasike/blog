@@ -1,5 +1,6 @@
 <?php
 include("../../path.php");
+include (ROOT_PATH. '/app/controllers/topics.php');
 ?>
 
 <!DOCTYPE html>
@@ -46,6 +47,7 @@ include("../../path.php");
 
         <div class="content">
             <h2 class="page-title">Manage Tags</h2>
+            <?php include(ROOT_PATH. "/app/includes/messages.php")?>
 
             <table>
                 <thead>
