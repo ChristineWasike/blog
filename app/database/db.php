@@ -1,5 +1,8 @@
 <?php
+
+session_start();
 require('connect.php');
+
 
 function displayData($value){
     echo "<pre>", print_r($value, true), "<pre>";

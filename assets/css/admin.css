@@ -53,6 +53,25 @@ header {
     padding: .8rem 1rem;
 }
 
+/*Another new one*/
+.success{
+    margin-top: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background-color: rgb(131, 175, 86);
+    border: 2px solid rgb(119, 173, 119);
+    border-radius: .5em;
+    color: white;
+    width: inherit;
+    text-align: center;
+
+}
+
+.success li {
+    list-style: none;
+}
+
+
 .admin-content .page-title {
     text-align: center;
     margin-bottom: 1.5rem;
