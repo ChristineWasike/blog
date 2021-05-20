@@ -1,5 +1,6 @@
 <?php
 include("../../path.php");
+include(ROOT_PATH. "/app/controllers/topics.php");
 ?>
 
 <!DOCTYPE html>
@@ -46,20 +47,21 @@ include("../../path.php");
 
         <div class="content">
             <h2 class="page-title">Edit a Tag</h2>
-
-            <form action="create.php" method="POST">
+            <?php include(ROOT_PATH . "/app/helpers/form_errors.php");?>
+            <form action="edit.php" method="POST">
+            <input type="hidden" name="id" value="<?php echo $id;?>">
                 <div class="form-group">
                     <label for="title">Name</label>
-                    <input type="text" class="form-control" name="name" id="name_input">
+                    <input type="text" class="form-control" name="name" value="<?php echo $name;?>" id="name_input">
                 </div>
 
                 <div class="form-group">
                     <label for="tags">Description</label>
-                    <textarea name="description" id="body"></textarea>
+                    <textarea name="description" id="body"><?php echo $description;?></textarea>
                 </div>
 
                 <div class="button-submit">
-                    <button type="submit" class="btn btn-primary">Done</button>
+                    <button type="submit" name="update-btn" class="btn btn-primary">Done</button>
                 </div>
             </form>
         </div>

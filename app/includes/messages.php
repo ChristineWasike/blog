@@ -1,5 +1,5 @@
 <?php if (isset($_SESSION['message'])) : ?>
-        <div class="msg col-md-2 offset-5 <?php echo $_SESSION['type'] ?>">
+        <div class="msg col-md-3 offset-4 <?php echo $_SESSION['type'] ?>">
             <li> <?php echo $_SESSION['message'] ?></li>
         </div>
         <?php

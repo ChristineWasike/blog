@@ -1,6 +1,6 @@
 <?php
 include("../../path.php");
-include (ROOT_PATH. '/app/controllers/topics.php');
+include(ROOT_PATH. "/app/controllers/topics.php");
 ?>
 
 <!DOCTYPE html>
@@ -47,16 +47,16 @@ include (ROOT_PATH. '/app/controllers/topics.php');
 
         <div class="content">
             <h2 class="page-title">Create a Tag</h2>
-
+            <?php include(ROOT_PATH . "/app/helpers/form_errors.php");?>
             <form action="create.php" method="POST">
                 <div class="form-group">
                     <label for="title">Name</label>
-                    <input type="text" class="form-control" name="name" id="name_input">
+                    <input type="text" class="form-control" name="name" value="<?php echo $name ?>" id="name_input">
                 </div>
 
                 <div class="form-group">
                     <label for="tags">Description</label>
-                    <textarea name="description" id="body"></textarea>
+                    <textarea name="description" id="body"><?php echo $description ?></textarea>
                 </div>
 
                 <div class="button-submit">

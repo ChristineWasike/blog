@@ -56,19 +56,16 @@ include (ROOT_PATH. '/app/controllers/topics.php');
                 <th colspan="2">Action</th>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Life lessons</td>
-                    <td><a href="" id="edit">Edit</a></td>
-                    <td><a href="" id="delete">Delete</a></td>
-                </tr>
 
+                <?php foreach ($topics as $key => $topic):?>
                 <tr>
-                    <td>2</td>
-                    <td>Self motivational</td>
-                    <td><a href="" id="edit">Edit</a></td>
-                    <td><a href="" id="delete">Delete</a></td>
+                    <td><?php echo $key + 1;?></td>
+                    <td><?php echo $topic['name'];?></td>
+                    <td><a href="edit.php?id=<?php echo $topic['id'];?>" id="edit">Edit</a></td>
+                    <td><a href="index.php?del_id=<?php echo $topic['id'];?>" id="delete">Delete</a></td>
                 </tr>
+                <?php endforeach;?>
+
                 </tbody>
             </table>
         </div>

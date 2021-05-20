@@ -56,7 +56,7 @@ include("../../path.php");
                 <tr>
                     <td>1</td>
                     <td>This is the first post.</td>
-                    <td><a href="" id="edit">Edit</a></td>
+                    <td><a href="edit.php?id=?php echo $post['id']?>" id="edit">Edit</a></td>
                     <td><a href="" id="delete">Delete</a></td>
                     <td><a href="" id="publish">Publish</a></td>
                 </tr>
