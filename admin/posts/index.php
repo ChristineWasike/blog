@@ -45,11 +45,12 @@ include(ROOT_PATH . "/app/controllers/posts.php");
             <div class="content">
                 <h2 class="page-title">Manage Posts</h2>
 
-                <?php include(ROOT_PATH . "/app/includes/messages.php");?>
+                <?php include(ROOT_PATH . "/app/includes/messages.php"); ?>
                 <table>
                     <thead>
                         <th></th>
                         <th>Title</th>
+                        <th>Author</th>
                         <th colspan="3">Action</th>
                     </thead>
                     <tbody>
@@ -59,12 +60,13 @@ include(ROOT_PATH . "/app/controllers/posts.php");
                                 <td><?php echo $key + 1; ?></td>
                                 <td><?php echo $post['title']; ?></td>
                                 <td>Nji Mbitaownu</td>
-                                <td><a href="edit.php?id=?php echo $post['id']?>" id="edit">Edit</a></td>
-                                <td><a href="" id="delete">Delete</a></td>
+                                <td><a href="edit.php?id=<?php echo $post['id']; ?>" id="edit">Edit</a></td>
+                                <td><a href="edit.php?delete_id=<?php echo $post['id']; ?>" id="delete">Delete</a></td>
+
                                 <?php if ($post['published']) : ?>
-                                    <td><a href="" id="unpublish">Unpublish</a></td>
+                                    <td><a href="edit.php?published=0&p_id=<?php echo $post['id']; ?>" id="unpublish">Unpublish</a></td>
                                 <?php else : ?>
-                                    <td><a href="" id="publish">Publish</a></td>
+                                    <td><a href="edit.php?published=1&p_id=<?php echo $post['id']; ?>" id="publish">Publish</a></td>
                                 <?php endif; ?>
                             </tr>
                         <?php endforeach; ?>

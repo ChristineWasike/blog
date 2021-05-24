@@ -44,45 +44,53 @@ include(ROOT_PATH . "/app/controllers/posts.php");
 
             <div class="content">
                 <h2 class="page-title">Create a Post</h2>
+
                 <?php include(ROOT_PATH . "/app/helpers/form_errors.php"); ?>
-                <form action="create.php" method="POST">
-                    <div class="form-group">
-                        <label for="title">Title</label>
-                        <input type="text" class="form-control" name="title" value="<?php echo $title ?>" id="text_input">
-                    </div>
+                
+                <form action="create.php" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control" name="title" value="<?php echo $title ?>" id="text_input">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="body">Body</label>
-                        <textarea name="body" id="body"><?php echo $title ?></textarea>
-                    </div>
+                        <div class="form-group">
+                            <label for="body">Body</label>
+                            <textarea name="body" id="body"><?php echo $title ?></textarea>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="image">Image</label>
-                        <input type="file" name="image" class="form-control">
-                    </div>
+                        <div class="form-group">
+                            <label for="image">Image</label>
+                            <input type="file" name="image" class="form-control">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="tags">Tags</label>
-                        <select name="topic_id" id="topic" class="form-control">
-                            <option value=""></option>
-                            <?php foreach ($topics as $key => $topic) : ?>
-                                <?php if (!empty($topic_id) && $topic_id == $topic['id']) : ?>
-                                    <option selected value="<?php echo $topic['id'] ?>"><?php echo $topic['name'] ?></option>
-                                <?php else : ?>
-                                    <option value="<?php echo $topic['id'] ?>"><?php echo $topic['name'] ?></option>
-                                <?php endif; ?>
+                        <div class="form-group">
+                            <label for="tags">Tags</label>
+                            <select name="topic_id" id="topic" class="form-control">
+                                <option value=""></option>
+                                <?php foreach ($topics as $key => $topic) : ?>
+                                    <?php if (!empty($topic_id) && $topic_id == $topic['id']) : ?>
+                                        <option selected value="<?php echo $topic['id'] ?>"><?php echo $topic['name'] ?></option>
+                                    <?php else : ?>
+                                        <option value="<?php echo $topic['id'] ?>"><?php echo $topic['name'] ?></option>
+                                    <?php endif; ?>
 
-                            <?php endforeach; ?>
-                        </select>
-                    </div>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
 
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" name="published" id="publish">
-                        <label for="publish" class="form-check-label">
-                            Publish
-                        </label>
-                    </div>
-
+                        <div class="form-check">
+                            <?php if (empty($published)) : ?>
+                                <input type="checkbox" class="form-check-input" name="published" id="publish">
+                                <label for="publish" class="form-check-label">
+                                    Publish
+                                </label>
+                            <?php else : ?>
+                                <input type="checkbox" checked class="form-check-input" name="published" id="publish">
+                                <label for="publish" class="form-check-label">
+                                    Publish
+                                </label>
+                            <?php endif; ?>
+                        </div>
                     <div class="button-submit">
                         <button type="submit" name="add-post" class="btn btn-primary">Done</button>
                     </div>

@@ -45,15 +45,16 @@ include(ROOT_PATH . "/app/controllers/posts.php");
             <div class="content">
                 <h2 class="page-title">Edit Post</h2>
 
-                <form action="edit.php" method="POST">
+                <form action="edit.php" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" class="form-control" name="id" value="<?php echo $id ?>" id="text_input">
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input type="text" class="form-control" name="title" id="text_input">
+                        <input type="text" class="form-control" name="title" value="<?php echo $title ?>" id="text_input">
                     </div>
 
                     <div class="form-group">
                         <label for="body">Body</label>
-                        <textarea name="body" id="body"></textarea>
+                        <textarea name="body" id="body"><?php echo $title ?></textarea>
                     </div>
 
                     <div class="form-group">
@@ -66,13 +67,32 @@ include(ROOT_PATH . "/app/controllers/posts.php");
                         <select name="topic_id" id="topic" class="form-control">
                             <option value=""></option>
                             <?php foreach ($topics as $key => $topic) : ?>
-                                <option value="<?php echo $topic['id'] ?>"><?php echo $topic['name'] ?></option>
+                                <?php if (!empty($topic_id) && $topic_id == $topic['id']) : ?>
+                                    <option selected value="<?php echo $topic['id'] ?>"><?php echo $topic['name'] ?></option>
+                                <?php else : ?>
+                                    <option value="<?php echo $topic['id'] ?>"><?php echo $topic['name'] ?></option>
+                                <?php endif; ?>
+
                             <?php endforeach; ?>
                         </select>
                     </div>
 
+                    <div class="form-check">
+                        <?php if (empty($published) && $published == 0) : ?>
+                            <input type="checkbox" class="form-check-input" name="published" id="publish">
+                            <label for="publish" class="form-check-label">
+                                Publish
+                            </label>
+                        <?php else : ?>
+                            <input type="checkbox" checked class="form-check-input" name="published" id="publish">
+                            <label for="publish" class="form-check-label">
+                                Publish
+                            </label>
+                        <?php endif; ?>
+                    </div>
+
                     <div class="button-submit">
-                        <button type="submit" class="btn btn-primary">Done</button>
+                        <button type="submit" name="update-post" class="btn btn-primary">Done</button>
                     </div>
                 </form>
             </div>
