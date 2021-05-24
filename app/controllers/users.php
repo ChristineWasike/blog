@@ -12,37 +12,45 @@ $conf_password = '';
 $table = 'users';
 
 
-function loginUser($user){
+function loginUser($user)
+{
     $_SESSION['id'] = $user['id'];
-        $_SESSION['username'] = $user['username'];
-        $_SESSION['admin'] = $user['admin'];
-        $_SESSION['message'] = 'You are now logged in';
-        $_SESSION['type'] = 'success';
+    $_SESSION['username'] = $user['username'];
+    $_SESSION['admin'] = $user['admin'];
+    $_SESSION['message'] = 'You are now logged in';
+    $_SESSION['type'] = 'success';
 
-        if ($_SESSION['admin']) {
-            header('location: ' . BASE_URL . '/admin/posts/index.php');
-        } else {
-            header('location: ' . BASE_URL . '/index.php');
-        }
+    if ($_SESSION['admin']) {
+        header('location: ' . BASE_URL . '/admin/posts/index.php');
+    } else {
+        header('location: ' . BASE_URL . '/index.php');
+    }
 
 
-        exit();
+    exit();
 }
 
-if (isset($_POST['register-btn'])) {
+if (isset($_POST['register-btn']) || isset($_POST['create-admin'])) {
     $errors = validateUser($_POST);
     if (count($errors) == 0) {
-        unset($_POST['register-btn'], $_POST['conf_password']);
-        $_POST['admin'] = 0;
+        unset($_POST['register-btn'], $_POST['conf_password'], $_POST['create-admin']);
         $_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-        $user_id = create($table, $_POST);
-        $user = selectOne($table, ['id' => $user_id]);
-
-        //log user in
-        // The information to be stored in the session
-        loginUser($user);
-        
+        if (isset($_POST['admin'])) {
+            $_POST['admin'] = 1;
+            $user_id = create($table, $_POST);
+            $_SESSION['message'] = "Admin user created successfully";
+            $_SESSION['type'] = "success";
+            header('location: ' . BASE_URL . '/admin/users/index.php');
+            exit();
+        } else {
+            $_POST['admin'] = 0;
+            $user_id = create($table, $_POST);
+            $user = selectOne($table, ['id' => $user_id]);
+            //log user in
+            // The information to be stored in the session
+            loginUser($user);
+        }
     } else {
         $username = $_POST['username'];
         $email = $_POST['email'];
@@ -62,10 +70,9 @@ if (isset($_POST['login-btn'])) {
             //log user in
             // The information to be stored in the session
             loginUser($user);
-           
         } else {
             array_push($errors, "Wrong credentials");
-            $username =$_POST['username'];
+            $username = $_POST['username'];
             $password = $_POST['password'];
         }
     }
