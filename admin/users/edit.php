@@ -2,13 +2,14 @@
 include("../../path.php");
 include(ROOT_PATH . "/app/controllers/users.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog| Create a User</title>
+    <title>Blog| Edit Admin user</title>
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -25,15 +26,15 @@ include(ROOT_PATH . "/app/controllers/users.php");
 
 <body>
 
-    <!-- Header -->
+    <!-- Admin Header -->
     <?php include(ROOT_PATH . "/app/includes/adminHeader.php") ?>
+
 
     <!-- Admin Page Wrapper -->
     <div class="admin-wrapper">
 
         <!-- Left side bar -->
         <?php include(ROOT_PATH . "/app/includes/adminSideBar.php") ?>
-
 
         <!--  Admin Content-->
         <div class="admin-content">
@@ -43,11 +44,10 @@ include(ROOT_PATH . "/app/controllers/users.php");
             </div>
 
             <div class="content">
-                <h2 class="page-title">Add a User</h2>
-
+                <h2 class="page-title">Edit Admin User</h2>
                 <?php include(ROOT_PATH . "/app/helpers/form_errors.php"); ?>
-
-                <form action="create.php" method="POST">
+                <form action="edit.php" method="POST">
+                    <input required type="hidden" class="form-control" name="id" id="id" value="<?php echo $id; ?>">
                     <div class="form-group">
                         <label for="username">Username</label>
                         <input required type="text" class="form-control" name="username" id="username" value="<?php echo $username; ?>">
@@ -60,12 +60,12 @@ include(ROOT_PATH . "/app/controllers/users.php");
 
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input required type="password" name="password" class="form-control" value="<?php echo $password; ?>">
+                        <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
                     </div>
 
                     <div class="form-group">
                         <label for="password">Confirm Password</label>
-                        <input required type="password" name="conf_password" class="form-control" value="<?php echo $conf_password; ?>">
+                        <input type="password" name="conf_password" class="form-control" value="<?php echo $conf_password; ?>">
                     </div>
 
                     <div class="form-check">
@@ -83,7 +83,7 @@ include(ROOT_PATH . "/app/controllers/users.php");
                     </div>
 
                     <div class="button-submit">
-                        <button type="submit" name="create-admin" class="btn btn-primary">Done</button>
+                        <button type="submit" name="update-user" class="btn btn-primary">Update User</button>
                     </div>
                 </form>
             </div>
@@ -93,6 +93,9 @@ include(ROOT_PATH . "/app/controllers/users.php");
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!-- Ckeditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/22.0.0/classic/ckeditor.js"></script>
 
     <!-- JavaScript -->
     <script src="../../assets/js/scripts.js"></script>

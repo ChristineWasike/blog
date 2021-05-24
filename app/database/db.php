@@ -38,7 +38,6 @@ function selectAll($table, $conditions = []){
             }
             $index++;
         }
-        displayData($sql);
         $stmt = executeQuery($sql, $conditions);
         return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     }
