@@ -59,7 +59,7 @@ include(ROOT_PATH . "/app/controllers/posts.php");
                             <tr>
                                 <td><?php echo $key + 1; ?></td>
                                 <td><?php echo $post['title']; ?></td>
-                                <td>Nji Mbitaownu</td>
+                                <td><?php echo $post['user_id']; ?></td>
                                 <td><a href="edit.php?id=<?php echo $post['id']; ?>" id="edit">Edit</a></td>
                                 <td><a href="edit.php?delete_id=<?php echo $post['id']; ?>" id="delete">Delete</a></td>
 

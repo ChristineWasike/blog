@@ -44,7 +44,7 @@ include(ROOT_PATH . "/app/controllers/posts.php");
 
             <div class="content">
                 <h2 class="page-title">Edit Post</h2>
-
+                <?php include(ROOT_PATH . "/app/helpers/form_errors.php"); ?>
                 <form action="edit.php" method="POST" enctype="multipart/form-data">
                     <input type="hidden" class="form-control" name="id" value="<?php echo $id ?>" id="text_input">
                     <div class="form-group">
