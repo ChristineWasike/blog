@@ -7,7 +7,8 @@ $table = 'posts';
 
 
 $topics = selectAll('topics');
-$posts = selectAll($table);
+// $posts = selectAll($table);
+$posts = getPosts();
 
 $errors = array();
 

@@ -2,8 +2,7 @@
 include("path.php");
 include(ROOT_PATH . "/app/controllers/topics.php");
 
-$posts = selectAll('posts', ['published' => 1]);
-// displayData($posts);
+$posts = getPublishedPosts();
 ?>
 
 <!DOCTYPE html>
@@ -24,20 +23,48 @@ $posts = selectAll('posts', ['published' => 1]);
     <!-- Work Sans Link -->
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/admin.css"> -->
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/blog.css">
     <link rel="stylesheet" href="assets/css/index.css">
-    <title>Blog | Home Page</title>
+    <script src="https://use.fontawesome.com/a34a6b47ba.js"></script>
+    <title>Blog</title>
 </head>
 
 <body>
     <?php include(ROOT_PATH . "/app/includes/new_header.php") ?>
 
+    <div class="container-fluid">
+        <!-- Featured Article -->
+        <div class="row">
+            <div class="featured">
+                <h3>
+                    Quit living as if the purpose<br>
+                    of life is to arrive safely at death.<br>
+                    Run to the roar.
+                </h3>
+            </div>
+        </div>
+        <!-- Featured Article -->
+        <div class="row articles">
+            <?php foreach ($posts as $post) : ?>
+                <div class="col-sm-6 col-md-4 offset-md-1">
+                    <div class="card bg-dark">
+                        <div class="image" style="background-image: url('<?php echo BASE_URL . '/assets/img/' . $post['image']; ?>');"></div>
+                        <div class="card-body ">
+                            <h5 class="card-title"><?php echo $post['title']; ?></h5>
+                            <p class="card-text"><?php echo html_entity_decode(substr($post['body'], 0, 150) . '...') ?></p>
+                            <i class="fas fa-calendar-alt"><?php echo date('F j, Y', strtotime($post['created_at'])); ?></i><br>
+                            <a href="single.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach ?>
 
 
-    <p>Homepage</p>
+        </div>
+
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="assets/js/new_scripts.js"></script>

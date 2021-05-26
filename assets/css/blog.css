@@ -36,6 +36,12 @@
     margin-bottom: 1.5rem;
 }
 
+.image{
+    height:15rem; 
+    background: transparent no-repeat center; background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
 .card{
     margin: auto;
     border-radius: 10px; 
