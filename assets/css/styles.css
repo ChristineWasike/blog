@@ -38,13 +38,13 @@ header ul li{
     position: relative;
 }
 
-header ul li ul{
+/* header ul li ul{
     position: absolute;
-    top: 60px;
+    top: 20px;
     right: 0;
     width: 150px;
     display: none;
-}
+} */
 
 
 header ul li:hover ul{

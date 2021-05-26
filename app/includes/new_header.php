@@ -5,6 +5,7 @@
             <a href="resume.html">Resume</a>
             <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
+            <a href="login.php">Login</a>
         </div>
     </div>
 

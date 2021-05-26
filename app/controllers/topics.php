@@ -18,7 +18,7 @@ if (isset($_POST['add-topic'])) {
     $errors = validateTopic($_POST);
     if (count($errors) == 0) {
         unset($_POST['add-topic']);
-        displayData($_POST);
+        // displayData($_POST);
         $topic_id = create($table, $_POST);
         $_SESSION['message'] = 'Topic successfully created';
         $_SESSION['type'] = 'success';

@@ -3,10 +3,8 @@
 include(ROOT_PATH . "/app/database/db.php");
 include(ROOT_PATH . "/app/helpers/validate_post.php");
 
-$table = 'posts';
-
-
 $topics = selectAll('topics');
+$table = 'posts';
 // $posts = selectAll($table);
 $posts = getPosts();
 
@@ -18,7 +16,7 @@ $body = "";
 $topic_id = "";
 $published = "";
 
-if ($_GET['id']) {
+if (isset($_GET['id'])) {
     $post = selectOne($table, ['id' => $_GET['id']]);
     $id = $post['id'];
     $title = $post['title'];
@@ -118,10 +116,11 @@ if (isset($_POST['update-post'])) {
 
         $post_id = update($table, $id, $_POST);
 
-        $_SESSION['message'] = "Post updated successfully";
+        $_SESSION['message'] = "Post updated successfully" .$post_id;
         $_SESSION['type'] = "success";
 
         header("location: " . BASE_URL . "/admin/posts/index.php");
+        exit();
     } else {
         $title = $_POST['title'];
         $body = $_POST['body'];

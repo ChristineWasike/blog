@@ -73,6 +73,9 @@ body{
    text-decoration: none;
    color: #33CCFF;
   }
+  a:hover{  
+    color: #6ad2f5
+  }
   
   /*--------------------------------------------------------------
   # Back to top button

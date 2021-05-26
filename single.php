@@ -1,8 +1,11 @@
 <?php
 include("path.php");
-include(ROOT_PATH . "/app/controllers/topics.php");
+include(ROOT_PATH . "/app/controllers/posts.php");
 
-$posts = getPublishedPosts();
+if (isset($_GET['id'])) {
+    $post = selectOne('posts', ['id' => $_GET['id']]);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -23,43 +26,30 @@ $posts = getPublishedPosts();
     <!-- Work Sans Link -->
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/common.css">
-    <link rel="stylesheet" href="assets/css/blog.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/single.css">
     <script src="https://use.fontawesome.com/a34a6b47ba.js"></script>
-    <title>Blog</title>
+    <title><?php echo $post['title']; ?> | Nji Mbitaownu</title>
 </head>
 
 <body>
     <?php include(ROOT_PATH . "/app/includes/new_header.php") ?>
 
     <div class="container-fluid">
-        <!-- Featured Article -->
-        <div class="row">
-            <div class="featured" style="background-image: url('<?php echo BASE_URL . '/assets/img/' . $posts[count($posts)-1]['image']; ?>'">
-                <h3>
-                    <?php echo $posts[count($posts)-1]['title'];?>
-                </h3>
-                <br>
-            </div>
+        <div class="col-md-12 cover" style="background-image: url('<?php echo BASE_URL . '/assets/img/' . $post['image']; ?>');">
+
         </div>
-        <!-- Featured Article -->
-        <div class="row articles">
-            <?php foreach ($posts as $post) : ?>
-                <div class="col-sm-6 col-md-4 offset-md-1">
-                    <div class="card bg-dark">
-                        <div class="image" style="background-image: url('<?php echo BASE_URL . '/assets/img/' . $post['image']; ?>');"></div>
-                        <div class="card-body ">
-                            <h5 class="card-title"><a href="single.php?id=<?php echo $post['id'];?>"><?php echo $post['title']; ?></a></h5>
-                            <p class="card-text"><?php echo html_entity_decode(substr($post['body'], 0, 150) . '...') ?></p>
-                            <i class="fas fa-calendar-alt"><?php echo date('F j, Y', strtotime($post['created_at'])); ?></i><br>
-                            <a href="single.php?id=<?php echo $post['id'];?>">Read more</a>
-                        </div>
-                    </div>
+
+        <div class="row">
+            <div class="container main">
+                <h3><?php echo $post['title']; ?></h3>
+                <div class="content">
+                    <p> <?php echo html_entity_decode($post['body']) ?></p>
                 </div>
-            <?php endforeach ?>
+            </div>
 
-
+            <p></p>
         </div>
 
     </div>
