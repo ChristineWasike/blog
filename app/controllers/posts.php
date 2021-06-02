@@ -116,7 +116,7 @@ if (isset($_POST['update-post'])) {
 
         $post_id = update($table, $id, $_POST);
 
-        $_SESSION['message'] = "Post updated successfully" .$post_id;
+        $_SESSION['message'] = "Post updated successfully";
         $_SESSION['type'] = "success";
 
         header("location: " . BASE_URL . "/admin/posts/index.php");
