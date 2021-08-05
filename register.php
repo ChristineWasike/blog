@@ -36,7 +36,7 @@
         <div class="content">
             <h2 class="page-title">Register</h2>
 
-            <form action="register.php" method="POST" class= "col-md-6 offset-3">
+            <form action="register.php" method="POST" class= "col-md-6 offset-2">
                 <?php include(ROOT_PATH . "/app/helpers/form_errors.php");?>
 
                 <div class="form-group">
