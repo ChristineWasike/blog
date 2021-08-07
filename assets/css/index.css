@@ -1,5 +1,5 @@
 body{
-    background: rgb(22, 22, 22);
+    background: rgb(15, 15, 15);
     color: rgb(207, 207, 207);
   }
 .navbar{
@@ -181,7 +181,7 @@ a:hover{
   .resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
-    border-left: 2px solid #ea80fc;
+    border-left: 2px solid #CDA750;
     position: relative;
   }
   
@@ -226,7 +226,7 @@ a:hover{
     left: -9px;
     top: 0;
     background: #fff;
-    border: 2px solid #ea80fc;
+    border: 2px solid #CDA750;
   }
 
 @media screen and (max-width:992px){

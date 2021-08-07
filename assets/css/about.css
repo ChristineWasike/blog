@@ -1,0 +1,184 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.about-me{  
+    padding-top: 2em;
+    margin-bottom: -15px;
+    min-height: 100vh;
+}
+
+.about-me h3{
+    font-weight: bolder;
+    text-decoration: underline dashed;
+    text-underline-position: under;
+}
+
+.about-me p{
+    font-size: large;
+}
+
+.about-me .description{
+    padding-right: 3rem;
+}
+
+.about-me .image{
+  text-align:center;
+}
+
+#about_image{
+    max-height: 25rem;
+    border-radius: 10px;
+}
+
+.about-socials{
+  margin-top: 0.4rem;
+}
+
+.get-in-touch{
+  color: rgb(224, 224, 224);
+  font-weight: bold;
+  background-color: #CDA750;
+  border-color: #CDA750;
+}
+.get-in-touch:hover{
+  color: rgb(15, 15, 15);
+  background-color: #CDA750;
+  border-color: #CDA750;
+}
+
+#competencies{  
+  /* padding-top: 2em; */
+  margin-bottom: -15px;
+  min-height: 100vh;
+}
+#competencies_row_1{
+  padding-top: 6rem;
+}
+
+#about-me #scroll, #testimonials #scroll, #competencies #scroll{
+  position: relative;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+#about-me #scroll:hover{
+  opacity: .5;
+}
+
+#about-me #scroll {
+  padding-top: 60px;
+}
+#about-me #scroll span {
+  position: absolute;
+  top: -3rem;
+  left: 50%;
+  width: 30px;
+  height: 40px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#about-me #scroll span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#testimonials{
+  padding-top: 2em;
+  min-height: 100vh;
+}
+
+.carousel-container{
+  padding-top: 5rem;
+}
+
+
+#tolu-card{
+  margin: 0 auto;
+}
+
+@media screen and (max-width:992px){
+  #about-me #scroll, #testimonials #scroll {
+    display: none;
+  }
+  
+  .about-me p, .get-in-touch{
+    font-size: small;
+  }
+
+  #testimonials h2, .description h3{
+    font-size: large;
+  }
+  .description h3{
+    margin-top: 2rem;
+  }
+
+  #competencies{  
+    padding-top: 3em;
+  }
+
+  #competencies_row_1{
+    padding-top: 2rem;
+  }
+  
+  .carousel-container{
+    padding-top: 2rem;
+  }
+
+  /* .new-cardHeader{
+    
+  } */
+}
