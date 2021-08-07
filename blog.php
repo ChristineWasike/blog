@@ -1,9 +1,9 @@
-<?php
-include("path.php");
-include(ROOT_PATH . "/app/controllers/topics.php");
+    <?php
+    include("path.php");
+    include(ROOT_PATH . "/app/controllers/topics.php");
 
-$posts = getPublishedPosts();
-?>
+    $posts = getPublishedPosts();
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">

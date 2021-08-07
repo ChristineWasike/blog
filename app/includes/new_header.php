@@ -1,15 +1,16 @@
 <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="about.html">About</a>
-            <a href="resume.html">Resume</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.php">Home</a>
+            <a href="about.php">About</a>
+            <a href="resume.php">Resume</a>
+            <a href="blog.php">Blog</a>
+            <a href="contact.php">Contact</a>
             <a href="login.php">Login</a>
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-transparent">
+    <nav class="navbar navbar-expand-sm navbar-dark">
         <a class="navbar-brand logo" href="index.php"><img src="assets/img/new_logo.png" alt="..."></a>
 
         <div id="navbarNav">
