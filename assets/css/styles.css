@@ -120,7 +120,7 @@ header .menu-toggle {
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 16%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -146,7 +146,17 @@ header .menu-toggle {
   font-size: 60px;
 }
   
-  @media screen and (max-height: 450px) {
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.page-footer>.my-grid>a:link {
+    text-decoration: none;
+    color:white;
+    
+} 
+
+@media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
     font-size: 40px;

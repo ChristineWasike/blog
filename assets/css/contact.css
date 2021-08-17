@@ -1,0 +1,52 @@
+.navbar{
+    background-color:rgb(10, 10, 10);
+}
+
+.landing{
+    background-image: url(../img/left.svg);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+	position: relative;
+}
+
+.contact_details{
+    padding-right: 8rem;
+}
+
+.form{
+    float: right;
+    /* text-align: right; */
+
+}
+
+.transparent-input{
+    background-color:rgba(0,0,0,0) !important;
+    border:none !important;
+ }
+
+.hamburger_menu img{
+    height: 15%; 
+    width: 15%;
+    float: right;
+    cursor: pointer;
+}
+
+@media screen and (max-width:992px){
+
+    .hamburger_menu img{
+        height: 5%; 
+        width: 5%;
+        float: right;
+        cursor: pointer;
+    }
+
+    .contact_details{
+        padding-right: 2rem;
+    }
+}

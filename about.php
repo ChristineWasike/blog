@@ -61,7 +61,7 @@ include("path.php");
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <a type="button" class="btn get-in-touch" href="contact.html">Get in
+                            <a type="button" class="btn get-in-touch" href="contact.php">Get in
                                 Touch</a>
                         </div>
                         <div class="col-md-6 about-socials">
@@ -241,28 +241,36 @@ include("path.php");
         <div class="container">
             <div class="row">
                 <!-- Grid column -->
-                <div class="col-md-3 mx-auto text-center">
+                <div class="col-md-3 my-grid mx-auto text-center">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About</h5>
+                    <a href="about.php">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About</h5>
+                    </a>
                 </div>
                 <!-- Grid column -->
-                <div class="col-md-3 mx-auto text-center">
+                <div class="col-md-3 my-grid mx-auto text-center">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Resume</h5>
+                    <a href="resume.php">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Resume</h5>
+                    </a>
                 </div>
                 <!-- Grid column -->
-                <div class="col-md-3 mx-auto text-center">
+                <div class="col-md-3 my-grid mx-auto text-center">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Blog</h5>
+                    <a href="blog.php">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Blog</h5>
+                    </a>
                 </div>
                 <!-- Grid column -->
-                <div class="col-md-3 mx-auto text-center">
+                <div class="col-md-3 my-grid mx-auto text-center">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
+                    <a href="contact.php">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
+                    </a>
                 </div>
             </div>
             <!-- Grid row-->
