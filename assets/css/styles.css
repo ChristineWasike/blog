@@ -150,7 +150,7 @@ header .menu-toggle {
 # Footer
 --------------------------------------------------------------*/
 
-.page-footer>.my-grid>a:link {
+.my-grid a {
     text-decoration: none;
     color:white;
     

@@ -104,44 +104,52 @@ include("path.php");
     <!-- End Resume Section -->
 
     <!-- Footer -->
-    <footer class="page-footer font-small cyan darken-3 pt-5">
+    <footer class="page-footer font-small cyan darken-3">
 
         <!-- Footer Elements -->
         <div class="container">
             <div class="row">
                 <!-- Grid column -->
-                <div class="col-md-3 mx-auto text-center">
+                <div class="col-md-3 my-grid mx-auto text-center">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About</h5>
+                    <a href="about.php">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About</h5>
+                    </a>
                 </div>
                 <!-- Grid column -->
-                <div class="col-md-3 mx-auto text-center">
+                <div class="col-md-3 my-grid mx-auto text-center">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Resume</h5>
+                    <a href="resume.php">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Resume</h5>
+                    </a>
                 </div>
                 <!-- Grid column -->
-                <div class="col-md-3 mx-auto text-center">
+                <div class="col-md-3 my-grid mx-auto text-center">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Blog</h5>
+                    <a href="blog.php">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Blog</h5>
+                    </a>
                 </div>
                 <!-- Grid column -->
-                <div class="col-md-3 mx-auto text-center">
+                <div class="col-md-3 my-grid mx-auto text-center">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
+                    <a href="contact.php">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
+                    </a>
                 </div>
             </div>
             <!-- Grid row-->
             <div class="row">
 
                 <!-- Grid column -->
-                <div class="col-md-12" style="text-align: center;">
+                <div class="col-md-12" style="text-align: center; margin-top:1rem;">
                     <div class="flex-center">
                         <!-- Facebook -->
-                        <!-- <a href="" target="_blank"><img src="assets/img/facebook.svg" alt="facebook"
+                        <!-- <a href="" target="_blank"><img src="img/facebook.svg" alt="facebook"
                                 class="social-media fb-ic"></a> -->
 
                         <!-- Twitter -->
@@ -165,6 +173,7 @@ include("path.php");
 
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
+            <br>
             <p>Copyright &copy;
                 <script>
                     document.write(new Date().getFullYear())
@@ -176,6 +185,7 @@ include("path.php");
 
     </footer>
     <!-- Footer -->
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
