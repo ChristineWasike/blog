@@ -1,22 +1,14 @@
 body {
-  background: rgb(10, 10, 10);
+  background: rgb(15, 15, 15);
   color: rgb(207, 207, 207);
 }
 
 .navbar {
-  background-color: rgb(10, 10, 10);
-}
-
-.navbar-brand{
-  /* width: 15%; */
-}
-.navbar-brand img {
-  height: 30%;
-  width: 30%;
+  background-color: rgb(15, 15, 15);
 }
 
 .landing {
-  background: linear-gradient(0deg, rgba(10, 10, 10, 0.4), rgba(25, 25, 25, 0.4)), url(../img/Logo_Website.svg);
+  background: linear-gradient(0deg, rgba(4, 4, 4, 0.7), rgba(13, 13, 13, 0.7)), url(../img/Logo_Website.svg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -29,105 +21,8 @@ body {
 }
 
 .landing_content {
-  padding-top: 5vh;
-  padding-left: 5vw;
-  /* float: right; */
-  /* text-align: center; */
-}
-
-.experience {
-  padding-top: 10vh;
-  background-color: white;
-  color: black;
-  height: 55vh;
-  width: 100%;
-  overflow: hidden;
-  align-items: center;
-  position: relative;
-}
-
-.experience::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transform-origin: top left;
-  transform: skewY(-5deg);
-}
-
-.inner-experience {
-  max-width: 50em;
-  margin: 0 auto;
-  /* transform: skewY(5deg); */
-  /* z-index: 3; */
-}
-
-.learn-more {
-  color: rgb(224, 224, 224);
-  font-weight: bold;
-  background-color: #CDA750;
-  border-color: #CDA750;
-}
-
-.learn-more:hover {
-  color: rgb(15, 15, 15);
-  background-color: #CDA750;
-  border-color: #CDA750;
-}
-
-.card {
-  background-color: rgb(39, 39, 39) !important;
-}
-
-.post_card {
-  background-color: rgb(39, 39, 39, 0) !important;
-  margin-bottom: 1em;
-}
-
-.clients {
-  padding-top: 10vh;
-  height: 70vh;
-}
-
-.post_heading {
-  padding-top: 5vh;
-  background-color: white;
-  color: black;
-  height: 20vh;
-  width: 100%;
-  /* overflow: hidden; */
-  align-items: center;
-  position: relative;
-}
-
-.posts {
-  padding-bottom: 3vh;
-  background-color: white;
-  color: black;
-  /* width: 100%; */
-  /* position: relative; */
-}
-
-.mailing {
-  padding-top: 5vh;
-  height: 55vh;
-  width: 100%;
-  /* overflow: hidden; */
-  align-items: center;
-  position: relative;
-}
-
-.talk {
-  padding-top: 10vh;
-  background-color: white;
-  color: black;
-  height: 38vh;
-  width: 100%;
-  /* overflow: hidden; */
-  align-items: center;
-  position: relative;
+  padding-top: 25vh;
+  text-align: center;
 }
 
 #welcome, .js-odoo {
@@ -215,9 +110,9 @@ a:hover {
 }
 
 .social-media {
-  height: 2.5rem;
-  width: 2.5rem;
-  margin-right: 5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: .7rem;
 }
 
 #twitter {
@@ -308,7 +203,7 @@ a:hover {
 
 .resume .resume-item a {
   text-decoration: none;
-  color: #CDA750 !important;
+  color: #CDA750 !important; 
 }
 
 .resume .resume-item a:hover {

@@ -134,7 +134,6 @@ function getPublishedPosts()
     return $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 }
 
-
 function getPosts()
 {
     global $conn;

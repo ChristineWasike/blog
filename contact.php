@@ -16,13 +16,17 @@ include("path.php");
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <!-- Open Sans Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
-<?php include(ROOT_PATH . "/app/includes/new_header.php") ?>
+<?php include(ROOT_PATH . "/app/includes/my_header.php") ?>
     <div class="container-fluid">
         <div class="row">
             <div class="landing">

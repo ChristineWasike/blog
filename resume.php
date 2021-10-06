@@ -21,7 +21,7 @@ include("path.php");
 </head>
 
 <body>
-    <?php include(ROOT_PATH . "/app/includes/new_header.php") ?>
+    <?php include(ROOT_PATH . "/app/includes/my_header.php") ?>
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
         <div class="container">

@@ -1,9 +1,9 @@
-    <?php
-    include("path.php");
-    include(ROOT_PATH . "/app/controllers/topics.php");
+<?php
+include("path.php");
+include(ROOT_PATH . "/app/controllers/topics.php");
 
-    $posts = getPublishedPosts();
-    ?>
+$posts = getPublishedPosts();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +23,12 @@
     <!-- Work Sans Link -->
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 
+    <!-- Open Sans Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/blog.css">
@@ -32,14 +38,14 @@
 </head>
 
 <body>
-    <?php include(ROOT_PATH . "/app/includes/new_header.php") ?>
+    <?php include(ROOT_PATH . "/app/includes/my_header.php") ?>
 
     <div class="container-fluid">
         <!-- Featured Article -->
         <div class="row">
-            <div class="featured" style="background-image: url('<?php echo BASE_URL . '/assets/img/' . $posts[count($posts)-1]['image']; ?>'">
+            <div class="featured" style="background-image: url('<?php echo BASE_URL . '/assets/img/' . $posts[count($posts) - 1]['image']; ?>'">
                 <h3>
-                    <?php echo $posts[count($posts)-1]['title'];?>
+                    <?php echo $posts[count($posts) - 1]['title']; ?>
                 </h3>
                 <br>
             </div>
@@ -51,15 +57,14 @@
                     <div class="card bg-dark">
                         <div class="image" style="background-image: url('<?php echo BASE_URL . '/assets/img/' . $post['image']; ?>');"></div>
                         <div class="card-body ">
-                            <h5 class="card-title"><a href="single.php?id=<?php echo $post['id'];?>"><?php echo $post['title']; ?></a></h5>
+                            <h5 class="card-title"><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h5>
                             <p class="card-text"><?php echo html_entity_decode(substr($post['body'], 0, 150) . '...') ?></p>
                             <i class="fas fa-calendar-alt"><?php echo date('F j, Y', strtotime($post['created_at'])); ?></i><br>
-                            <a href="single.php?id=<?php echo $post['id'];?>">Read more</a>
+                            <a href="single.php?id=<?php echo $post['id']; ?>">Read more</a>
                         </div>
                     </div>
                 </div>
             <?php endforeach ?>
-
 
         </div>
 

@@ -34,7 +34,7 @@ if (isset($_GET['id'])) {
 </head>
 
 <body>
-    <?php include(ROOT_PATH . "/app/includes/new_header.php") ?>
+    <?php include(ROOT_PATH . "/app/includes/my_header.php") ?>
 
     <div class="container-fluid">
         <div class="col-md-12 cover" style="background-image: url('<?php echo BASE_URL . '/assets/img/' . $post['image']; ?>');">

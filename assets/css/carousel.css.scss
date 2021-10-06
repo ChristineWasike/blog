@@ -1,0 +1,36 @@
+$carouselArrowWidth: 3em;
+.carousel-control {
+  width: $carouselArrowWidth;
+  .icon-prev, .icon-next, .glyphicon-chevron-left, .glyphicon-chevron-right {
+    margin: 0.2em;
+  }
+  .icon-prev, .glyphicon-chevron-left {
+    left: 2;
+  }
+  .icon-next, .glyphicon-chevron-right {
+    right: 2;
+  }
+}
+.carousel {
+  padding-left: $carouselArrowWidth + 1.5em;
+  padding-right: $carouselArrowWidth + 1.5em;
+}
+
+/**
+ * carousel control style
+ */
+.carousel-control {
+  opacity: 1;
+  color: #ccc;
+  text-shadow: none;
+  &.left, &.right {
+    background-image: none;
+  }
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #999;
+}
+.carousel {
+  height: 380px;
+}

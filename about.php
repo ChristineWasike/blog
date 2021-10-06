@@ -16,13 +16,18 @@ include("path.php");
     <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    
+    <!-- Open Sans Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/about.css">
 </head>
 
 <body>
-    <?php include(ROOT_PATH . "/app/includes/new_header.php") ?>
+    <?php include(ROOT_PATH . "/app/includes/my_header.php") ?>
 
     <div class="container-fluid" id="main">
 
@@ -61,7 +66,7 @@ include("path.php");
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <a type="button" class="btn get-in-touch" href="contact.php">Get in
+                            <a type="button submit" class="btn get-in-touch" href="contact.php">Get in
                                 Touch</a>
                         </div>
                         <div class="col-md-6 about-socials">
@@ -127,108 +132,6 @@ include("path.php");
         <!-- ======= End of Competencies Section ======= -->
 
 
-        <!-- ======= Start of Testimonials Section ======= -->
-        <!-- <section id="testimonials">
-            <h2 style="text-align: center;" class="header">Testimonials</h2>
-            <div class="container carousel-container">
-                <div id="carouselContent" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active text-center p-4">
-                            <div class="card text-white bg-dark mb-3" id="tolu-card" style="max-width: 30rem;">
-                                <div class="card-header">
-                                    <div id="testimonial_card" class="row" style="padding-left: 1rem;">
-                                        <img src="assets/img/chidi.jpeg" alt="Chidi"
-                                            style="border-radius: 50%; height: 5rem; width: 5rem;">
-                                        <p style="text-align: left; margin-left: 2rem; padding-top: .4rem;">Chidi
-                                            Afulezi<br>Head Faculty, Product, Innovation and<br> Entrepreneurship</p>
-                                        <h1 id="blockQuote" style="font-size: 5rem; margin-top: -1.5rem;">&rdquo;</h1>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        I am pleased to nominate Nji Mbitaownu as the Sales Executive Award.
-                                        To be honest, I have never worked with a person who gives so much of
-                                        attention to every detail he works on.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="carousel-item text-center p-4">
-                            <div class="card text-white bg-dark mb-3" id="tolu-card" style="max-width: 30rem;">
-                                <div class="card-header">
-                                    <div id="testimonial_card" class="row" style="padding-left: 1rem;">
-                                        <img src="img/tolu.jpeg" alt="Tolu"
-                                            style="border-radius: 50%; height: 5rem; width: 5rem;">
-                                        <p style="text-align: left; margin-left: 2rem; padding-top: .4rem;">Tolu
-                                            <br>Faculty, Entrepreneurial Leadership
-                                        </p>
-                                        <h1 id="blockQuote" style="font-size: 5rem; margin-top: -1.5rem;">&rdquo;</h1>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        It is in his willingness to work on difficult projects and tasks and
-                                        see them completing has impressed everyone in the company over the years.
-                                        His skills do not end with official work.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item text-center p-4">
-                            <div class="card text-white bg-dark mb-3" id="tolu-card" style="max-width: 30rem;">
-                                <div class="card-header">
-                                    <div id="testimonial_card" class="row" style="padding-left: 1rem;">
-                                        <img src="img/demi.jpeg" alt="Demi"
-                                            style="border-radius: 50%; height: 5rem; width: 5rem;">
-                                        <p style="text-align: left; margin-left: 2rem; padding-top: .4rem;">Demilade
-                                            <br>Entrepreneurial Leadership Faculty
-                                        </p>
-                                        <h1 id="blockQuote" style="font-size: 5rem; margin-top: -1.5rem;">&rdquo;</h1>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        It is in his willingness to work on difficult projects and tasks and
-                                        see them completing has impressed everyone in the company over the years.
-                                        His skills do not end with official work.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item text-center p-4">
-                            <div class="card text-white bg-dark mb-3" id="tolu-card" style="max-width: 30rem;">
-                                <div class="card-header">
-                                    <div id="testimonial_card" class="row" style="padding-left: 1rem;">
-                                        <img src="img/david.jpeg" alt="David"
-                                            style="border-radius: 50%; height: 5rem; width: 5rem;">
-                                        <p style="text-align: left; margin-left: 2rem; padding-top: .4rem;">David
-                                            <br>Global Challenges Facilitator
-                                        </p>
-                                        <h1 id="blockQuote" style="font-size: 5rem; margin-top: -1.5rem;">&rdquo;</h1>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        It is in his willingness to work on difficult projects and tasks and
-                                        see them completing has impressed everyone in the company over the years.
-                                        His skills do not end with official work.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </section> -->
         <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
     </div>
 
