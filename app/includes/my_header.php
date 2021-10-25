@@ -21,7 +21,7 @@
         <a class="nav-link" href="about.php">Services</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://blog.mbitaownu.com">Blog</a>
+        <a class="nav-link" href="https://blog.mbitaownu.com/blog/">Blog</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="contact.php">Contact</a>

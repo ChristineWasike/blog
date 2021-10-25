@@ -26,7 +26,38 @@ include("path.php");
 </head>
 
 <body>
-<?php include(ROOT_PATH . "/app/includes/my_header.php") ?>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="index.php">
+      <picture>
+      <source media="(min-width:650px)" srcset="assets/img/mwl_logo.png">
+      <img src="assets/img/mws_logo.png" alt="...">
+      </picture>
+    </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.php">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.php">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="resume.php">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://blog.mbitaownu.com/blog/">Blog</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.php">Contact <span class="sr-only">(current)</span></a>
+      </li>
+  
+    </ul>
+  </div>
+</nav>
     <div class="container-fluid">
         <div class="row">
             <div class="landing">
@@ -60,6 +91,10 @@ include("path.php");
             </div>
         </div>
     </div>
+    
+    <!-- Footer -->
+    <?php include(ROOT_PATH . "/app/includes/footer.php") ?>
+    <!-- Footer -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
