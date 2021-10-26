@@ -5,9 +5,20 @@
 //         element.classList.remove("row");
 //         element.classList.add("new-cardHeader");
 
-    
+
 //         var myobj = document.getElementById("blockQuote");
 //         console.log(myobj);
 //         // myobj.remove();
 //     }
 // }
+
+
+$(window).bind("resize", function () {
+    console.log($(this).width())
+    if ($(this).width() < 425) {
+        var element = document.getElementById("categories");
+        element.classList.remove('offset-1')
+
+    }
+
+})

@@ -174,7 +174,6 @@ header .menu-toggle {
 
   @media screen and (min-width:992px){
     #navbarNav{
-        /* float: left;  */
         margin-left: 70vw;
     }
 }

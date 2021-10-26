@@ -1,62 +1,80 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-.about-me{  
-    padding-top: 2em;
-    margin-bottom: -15px;
-    min-height: 100vh;
+body {
+  background: rgb(255, 255, 255);
+  color: rgb(10, 10, 10);
 }
 
-.about-me h3{
-    font-weight: bolder;
-    text-decoration: underline dashed;
-    text-underline-position: under;
+.about-me {
+  padding-top: 2em;
+  margin-bottom: -15px;
+  min-height: 70vh;
 }
 
-.about-me p{
-    font-size: large;
+.about-me h3 {
+  font-weight: bolder;
+  text-decoration: underline dashed;
+  text-underline-position: under;
 }
 
-.about-me .description{
-    padding-right: 3rem;
+.about-me p {
+  font-size: x-large;
 }
 
-.about-me .image{
-  text-align:center;
+.about-me .description {
+  padding-right: 3rem;
+  display: block;
 }
 
-#about_image{
-    max-height: 25rem;
-    border-radius: 10px;
+.about-me .description .contents {
+  display: table-cell;
+  vertical-align: middle;
 }
 
-.about-socials{
+.about-me .image {
+  text-align: center;
+}
+
+#about_image {
+  max-height: 30rem;
+  border-radius: 10px;
+}
+
+
+.more-about p{
+  font-size: x-large; 
+}
+
+.about-socials {
   margin-top: 0.4rem;
 }
 
-.get-in-touch{
+.get-in-touch {
   color: rgb(224, 224, 224);
   font-weight: bold;
   background-color: #CDA750;
   border-color: #CDA750;
 }
-.get-in-touch:hover{
+
+.get-in-touch:hover {
   color: rgb(15, 15, 15);
   background-color: #CDA750;
   border-color: #CDA750;
 }
 
-#competencies{  
+#competencies {
   /* padding-top: 2em; */
   margin-bottom: -15px;
   min-height: 100vh;
 }
-#competencies_row_1{
+
+#competencies_row_1 {
   padding-top: 6rem;
 }
 
-#about-me #scroll, #testimonials #scroll, #competencies #scroll{
+#about-me #scroll, #testimonials #scroll, #competencies #scroll {
   position: relative;
   bottom: 20px;
   left: 50%;
@@ -65,19 +83,20 @@ html{
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: #fff;
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  font: normal 400 20px/1 'Josefin Sans', sans-serif;
   letter-spacing: .1em;
   text-decoration: none;
   transition: opacity .3s;
 }
 
-#about-me #scroll:hover{
+#about-me #scroll:hover {
   opacity: .5;
 }
 
 #about-me #scroll {
   padding-top: 60px;
 }
+
 #about-me #scroll span {
   position: absolute;
   top: -3rem;
@@ -89,6 +108,7 @@ html{
   border-radius: 50px;
   box-sizing: border-box;
 }
+
 #about-me #scroll span::before {
   position: absolute;
   top: 10px;
@@ -103,6 +123,7 @@ html{
   animation: sdb10 2s infinite;
   box-sizing: border-box;
 }
+
 @-webkit-keyframes sdb10 {
   0% {
     -webkit-transform: translate(0, 0);
@@ -119,6 +140,7 @@ html{
     opacity: 0;
   }
 }
+
 @keyframes sdb10 {
   0% {
     transform: translate(0, 0);
@@ -136,50 +158,41 @@ html{
   }
 }
 
-#testimonials{
+#testimonials {
   padding-top: 2em;
   min-height: 100vh;
 }
 
-.carousel-container{
+.carousel-container {
   padding-top: 5rem;
 }
 
-
-#tolu-card{
+#tolu-card {
   margin: 0 auto;
 }
 
-
-
-@media screen and (max-width:992px){
+@media screen and (max-width:992px) {
   #about-me #scroll, #testimonials #scroll {
     display: none;
   }
-  
-  .about-me p, .get-in-touch{
+  .about-me p, .get-in-touch {
     font-size: small;
   }
-
-  #testimonials h2, .description h3{
+  #testimonials h2, .description h3 {
     font-size: large;
   }
-  .description h3{
+  .description h3 {
     margin-top: 2rem;
   }
-
-  #competencies{  
+  #competencies {
     padding-top: 3em;
   }
-
-  #competencies_row_1{
+  #competencies_row_1 {
     padding-top: 2rem;
   }
-  
-  .carousel-container{
+  .carousel-container {
     padding-top: 2rem;
   }
-
   /* .new-cardHeader{
     
   } */
