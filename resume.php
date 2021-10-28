@@ -80,6 +80,30 @@ include("path.php");
 
             </div>
         </div>
+
+        <div class="services">
+            <div class="row">
+                <div class="col-md-4 card-shell">
+                    <div class="card text-white" style="width: 22rem;">
+                        <div class="card-body card_image">
+                            <h5 class="card-title">New Venture Development</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">A startup service where I assist new
+                                emerging businesses through the new
+                                venture development process. As a coach
+                                and trainer I take them through each step
+                                and evaluate their progress and fine tune
+                                their business idea into a market ready
+                                venture which is solving a problem in
+                                society. This is a six month long
+                                bootcamp designed to launch businesses. <a href="#">Learn more</a></p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
