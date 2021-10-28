@@ -23,7 +23,6 @@ include("path.php");
 
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/contact.css">
-  <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
@@ -59,36 +58,65 @@ include("path.php");
       </ul>
     </div>
   </nav>
+
+
   <div class="container-fluid">
-    <div class="row">
-      <div class="landing">
-        <div class="col-md-12 contact_details" style="color: white;">
-          <div class="form col-sm-6 col-md-4">
-            <h4>Contact Me</h4>
-            <form action="https://formspree.io/f/xjvjyjln" method="POST">
-              <div class="form-group">
-                <!-- <label for="fullName">Full Name</label> -->
-                <input name="name" type="name" class="form-control" id="fullName" aria-describedby="nameHelp" placeholder="Full name">
-              </div>
-              <div class="form-group">
-                <!-- <label for="exampleInputEmail1">Email address</label> -->
-                <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-              <div class="form-group">
-                <!-- <label for="company">Company</label> -->
-                <input name="company" type="contact" class="form-control" id="company" aria-describedby="contactHelp" placeholder="Company">
-              </div>
-              <div class="form-group">
-                <!-- <label for="message">Your message</label> -->
-                <textarea name="message" class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
-              </div>
-              <button type="submit" class="btn btn-dark">Submit</button>
-            </form>
+    <h2>Get in Touch</h2>
+    <div class="row landing">
+      <div class="form col-md-6">
+        <form action="https://formspree.io/f/xjvjyjln" method="POST">
+          <h4>Message Me</h4>
+          <div class="form-group">
+            <!-- <label for="fullName">Full Name</label> -->
+            <input name="name" type="name" class="form-control" id="fullName" aria-describedby="nameHelp" placeholder="Full name">
           </div>
+          <div class="form-group">
+            <!-- <label for="exampleInputEmail1">Email address</label> -->
+            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <!-- <label for="message">Your message</label> -->
+            <textarea name="message" class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark" id="contact_button">Submit</button>
+        </form>
+      </div>
+
+
+      <div class="col-md-6 full_details">
+        <div class="contact_information">
+          <h4>Contact Info</h4>
+          <p>Always available to work if the right project<br>
+            comes along. Feel free to contact me!</p>
+
+          <div class="row contact-item">
+            <div class="col-md-2 column-image">
+              <img src="assets/img/programmer.png" alt="name">
+            </div>
+            <div class="col-md-8 column-description">
+              <p>Name <br><span>Nji Mbitaownu</span></p>
+            </div>
+          </div>
+
+          <div class="row contact-item">
+            <div class="col-md-2 column-images">
+              <img src="assets/img/placeholder.png" alt="name">
+            </div>
+            <div class="col-md-8 column-description">
+              <p>Location <br><span>Kigali, Rwanda</span></p>
+            </div>
+          </div>
+
+          <div class="row contact-item">
+            <div class="col-md-2 column-images1">
+              <img src="assets/img/email.png" alt="name">
+            </div>
+            <div class="col-md-8 column-description">
+              <p>Email me <br><span>nji@mbitaownu.com</span></p>
+            </div>
+          </div>
+
         </div>
-
-
       </div>
     </div>
   </div>
