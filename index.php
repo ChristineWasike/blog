@@ -84,14 +84,14 @@ $posts = getPublishedPosts();
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active text-center p-4">
-                                <div class="card text-white bg-dark mb-3" id="tolu-card" style="max-width: 30rem;">
+                                <div class="card text-white bg-dark mb-3" id="chidi-card" style="max-width: 30rem;">
                                     <div class="card-header">
                                         <div id="testimonial_card" class="row" style="padding-left: 1rem;">
                                             <img src="assets/img/chidi.jpeg" alt="Chidi" style="border-radius: 50%; height: 5rem; width: 5rem;">
-                                            <p style="text-align: left; margin-left: 2rem; padding-top: .4rem;">Name
+                                            <p style="text-align: left; margin-left: 2%; padding-top: .4rem;">Name
                                                 <br>Organisation, Position
                                             </p>
-                                            <h1 id="blockQuote" style="font-size: 5rem; padding-left:8vw; margin-top: -1.5rem;">&rdquo;</h1>
+                                            <h1 id="blockQuote" class="blockQuote" style="font-size: 5rem; padding-left:8%; margin-top: -1.5rem;">&rdquo;</h1>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -108,11 +108,11 @@ $posts = getPublishedPosts();
                                 <div class="card text-white bg-dark mb-3" id="tolu-card" style="max-width: 30rem;">
                                     <div class="card-header">
                                         <div id="testimonial_card" class="row" style="padding-left: 1rem;">
-                                            <img src="assets/img/tolu.jpeg" alt="Chidi" style="border-radius: 50%; height: 5rem; width: 5rem;">
-                                            <p style="text-align: left; margin-left: 2rem; padding-top: .4rem;">Name
+                                            <img src="assets/img/tolu.jpeg" alt="Tolu" style="border-radius: 50%; height: 5rem; width: 5rem;">
+                                            <p style="text-align: left; margin-left: 2%; padding-top: .4rem;">Name
                                                 <br>Organisation, Position
                                             </p>
-                                            <h1 id="blockQuote" style="font-size: 5rem; padding-left:8vw; margin-top: -1.5rem;">&rdquo;</h1>
+                                            <h1 id="blockQuote" class="blockQuote" style="font-size: 5rem; padding-left:8%; margin-top: -1.5rem;">&rdquo;</h1>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -125,14 +125,14 @@ $posts = getPublishedPosts();
                                 </div>
                             </div>
                             <div class="carousel-item text-center p-4">
-                                <div class="card text-white bg-dark mb-3" id="tolu-card" style="max-width: 30rem;">
+                                <div class="card text-white bg-dark mb-3" id="david-card" style="max-width: 30rem;">
                                     <div class="card-header">
                                         <div id="testimonial_card" class="row" style="padding-left: 1rem;">
-                                            <img src="assets/img/david.jpeg" alt="Chidi" style="border-radius: 50%; height: 5rem; width: 5rem;">
-                                            <p style="text-align: left; margin-left: 2rem; padding-top: .4rem;">Name
+                                            <img src="assets/img/david.jpeg" alt="David" style="border-radius: 50%; height: 5rem; width: 5rem;">
+                                            <p style="text-align: left; margin-left: 2%; padding-top: .4rem;">Name
                                                 <br>Organisation, Position
                                             </p>
-                                            <h1 id="blockQuote" style="font-size: 5rem; padding-left:8vw; margin-top: -1.5rem;">&rdquo;</h1>
+                                            <h1 id="blockQuote" class="blockQuote" style="font-size: 5rem; padding-left:8%; margin-top: -1.5rem;">&rdquo;</h1>
                                         </div>
                                     </div>
                                     <div class="card-body">

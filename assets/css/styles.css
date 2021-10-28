@@ -1,24 +1,25 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Lora', serif;
+body {
+    /* font-family: 'Lora', serif; */
     padding: 0px;
     margin: 0px;
-
+    background: rgb(10, 10, 10);
+    color: rgb(207, 207, 207);
 }
 
-header{
-   height: 10vh;
-   background-color:white;
+header {
+    height: 10vh;
+    background-color: white;
 }
 
-header *{
+header * {
     color: black;
 }
 
-header .logo{
+header .logo {
     float: left;
     height: inherit;
     padding: .8rem;
@@ -31,30 +32,21 @@ header ul {
     margin-right: 1em;
 }
 
-header ul li{
+header ul li {
     float: left;
     position: relative;
 }
 
-/* header ul li ul{
-    position: absolute;
-    top: 20px;
-    right: 0;
-    width: 150px;
-    display: none;
-} */
-
-
-header ul li:hover ul{
- display: block;
+header ul li:hover ul {
+    display: block;
 }
 
-header ul li ul li{
+header ul li ul li {
     width: 100%;
     text-align: center;
 }
 
-header ul li ul li a{
+header ul li ul li a {
     padding: 10px;
     color: black;
 }
@@ -67,127 +59,144 @@ header ul li a {
     color: white;
 }
 
-header ul li a:hover{
-    background-color: #373737; 
+header ul li a:hover {
+    background-color: #373737;
     color: white;
     transition: 0.5s;
 }
 
 header .menu-toggle {
     display: none;
-    width:4rem;
+    width: 4rem;
 }
 
 .logo img {
     width: 10rem;
-    
 }
 
 #user {
     text-decoration: none;
 }
 
+/* Added more css ^5 Aug 2021^ */
 
-/* Added more css ^5 Aug 2021^ */ 
 .navbar {
     padding-top: 0px;
+    background-color: rgb(10, 10, 10);
 }
 
-#overlay{
+.navbar-brand img {
+    height: 30%;
+    width: 30%;
+}
+
+#overlay {
     display: none;
 }
 
-.logo img{
-    height: 70%; 
-    width: 70%; 
+.logo img {
+    height: 70%;
+    width: 70%;
     padding-top: .2em;
 }
 
 .overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.97);
-  overflow-x: hidden;
-  transition: 0.5s;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.97);
+    overflow-x: hidden;
+    transition: 0.5s;
 }
 
 .overlay-content {
-  position: relative;
-  top: 16%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+    position: relative;
+    top: 16%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 30px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+    color: #f1f1f1;
 }
 
 .overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
-  
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
 .my-grid a {
     text-decoration: none;
-    color:white;
-    
-} 
-
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-  }
-
-@media (min-width: 576px){
-  .navbar-expand-sm {
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -ms-flex-pack: start;
-    justify-content:space-between;
-  }
+    color: white;
 }
 
-  @media screen and (min-width:992px){
-    #navbarNav{
+.social-media {
+    height: 5%;
+    width: 5%;
+    margin-right: 5%;
+}
+
+#twitter {
+    margin-top: .3rem;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media (min-width: 576px) {
+    .navbar-expand-sm {
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #navbarNav {
         margin-left: 70vw;
     }
 }
-@media screen and (max-width:992px){
-    #navbarNav{
-        float: right; 
+
+@media screen and (max-width:992px) {
+    #navbarNav {
+        float: right;
     }
     .logo {
         margin-right: 0px;
         padding: 0px 0px;
     }
-    .logo img{
-        height: 40%; 
-        width: 40%; 
+    .logo img {
+        height: 40%;
+        width: 40%;
         padding-top: .2em;
     }
 }

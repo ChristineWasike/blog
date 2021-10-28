@@ -50,7 +50,7 @@ include("path.php");
           <a class="nav-link" href="resume.php">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://blog.mbitaownu.com/blog/">Blog</a>
+          <a class="nav-link" href="https://blog.mbitaownu.com">Blog</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="contact.php">Contact <span class="sr-only">(current)</span></a>

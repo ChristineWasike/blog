@@ -34,10 +34,11 @@ body {
 }
 
 .experience {
-  padding-top: 10vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
   background-color: white;
   color: black;
-  height: 55vh;
+  height: 60%;
   width: 100%;
   overflow: hidden;
   align-items: center;
@@ -85,15 +86,16 @@ body {
 }
 
 .clients {
-  padding-top: 10vh;
-  height: 70vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: 60%;
 }
 
 .post_heading {
-  padding-top: 5vh;
+  padding-top: 5%;
   background-color: white;
   color: black;
-  height: 20vh;
+  height: 50%;
   width: 100%;
   /* overflow: hidden; */
   align-items: center;
@@ -109,8 +111,9 @@ body {
 }
 
 .mailing {
-  padding-top: 5vh;
-  height: 55vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: 60%;
   width: 100%;
   /* overflow: hidden; */
   align-items: center;
@@ -118,10 +121,11 @@ body {
 }
 
 .talk {
-  padding-top: 10vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
   background-color: white;
   color: black;
-  height: 38vh;
+  height: 40%;
   width: 100%;
   /* overflow: hidden; */
   align-items: center;
@@ -210,16 +214,6 @@ a:hover {
   color: #fff;
   background: rgb(58, 57, 57);
   transition: background 0.2s ease-in-out;
-}
-
-.social-media {
-  height: 2.5rem;
-  width: 2.5rem;
-  margin-right: 5rem;
-}
-
-#twitter {
-  margin-top: .3rem;
 }
 
 .email {
@@ -337,6 +331,8 @@ a:hover {
   border: 2px solid #CDA750;
 }
 
+
+
 @media screen and (max-width:992px) {
   .socials {
     display: none;
@@ -355,5 +351,16 @@ a:hover {
   }
   .mobile_socials {
     display: block;
+  }
+}
+
+@media screen and (max-width:375px) {
+  #chidi-card, #tolu-card, #david-card{
+    max-width: 40rem;
+    /* width: 100%; */
+  }
+
+  .blockQuote{
+    font-size:large;
   }
 }

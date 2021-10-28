@@ -15,124 +15,72 @@ include("path.php");
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+    <!-- Lora Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/services.css">
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="index.php">
-      <picture>
-      <source media="(min-width:650px)" srcset="assets/img/mwl_logo.png">
-      <img src="assets/img/mws_logo.png" alt="...">
-      </picture>
-    </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.php">
+            <picture>
+                <source media="(min-width:650px)" srcset="assets/img/mwl_logo.png">
+                <img src="assets/img/mws_logo.png" alt="...">
+            </picture>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="index.php">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.php">About</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="resume.php">Services  <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://blog.mbitaownu.com/blog/">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.php">Contact</a>
-      </li>
-  
-    </ul>
-  </div>
-</nav>
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-        <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.php">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="resume.php">Services <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://blog.mbitaownu.com">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.php">Contact</a>
+                </li>
 
-            <div class="section-title">
-                <h2 style="font-weight: bolder;">Resume</h2>
-
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="resume-title">Professional Experience</h3>
-                    <div class="resume-item">
-                        <h4>Incubator Manager with School of Wildlife Conservation</h4>
-                        <a href="https://sowc.alueducation.com/" style="color: cadetblue;" target="_blank">
-                            <p><em>African Leadership University, Rwanda</em></p>
-                        </a>
-                        <p><em>Feb 2021 - Present</em></p>
-                        <!-- <ul>
-                            <li>Lead in the design and implementation of the graphic layout</li>
-                            <li>Delegate tasks to 7 members of the design team </li>
-                            <li>Supervise the assessment of graphic materials</li>
-                            <li>Oversee the efficient use of production project $2,000 - $25,000</li>
-                        </ul> -->
-                    </div>
-
-                    <div class="resume-item">
-                        <h4>Course Facilitator</h4>
-                        <a href="https://alueducation.com/" style="color: cadetblue;" target="_blank">
-                            <p><em>African Leadership University, Rwanda</em></p>
-                        </a>
-                        <p><em>Jan 2020 - Present</em></p>
-                        <!-- <ul>
-                            <li>Lead in the design and implementation of the graphic layout</li>
-                            <li>Delegate tasks to 7 members of the design team </li>
-                            <li>Supervise the assessment of graphic materials</li>
-                            <li>Oversee the efficient use of production project $2,000 - $25,000</li>
-                        </ul> -->
-                    </div>
-
-
-                    <div class="resume-item">
-                        <h4>Student Ventures Program Lead</h4>
-                        <a href="https://alueducation.com/" style="color: cadetblue;" target="_blank">
-                            <p><em>African Leadership University, Rwanda</em></p>
-                        </a>
-                        <p><em>Jan 2019 - Dec 2020</em></p>
-                        <!-- <ul>
-                            <li>Developed numerous marketing programs.</li>
-                            <li>Managed up to 5 projects </li>
-                            <li>Recommended and consulted with clients on graphic design</li>
-                            <li>Created 4+ design proposals a month for clients</li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-up">
-                    <h3 class="resume-title">Education</h3>
-                    <div class="resume-item">
-                        <h4>Master of Business Administration - MBA Finance</h4>
-                        <p><em>Adventist University of Central Africa, Rwanda</em></p>
-                        <p>Major: Finance</p>
-                    </div>
-
-                    <div class="resume-item">
-                        <h4>Certified Public Accountancy</h4>
-                        <p><em>Institute of Certified Public Accountants, Rwanda</em></p>
-                        <p>Ongoing</p>
-                    </div>
-
-                    <div class="resume-item">
-                        <h4>Bachelors in Business Administration, Accounting &amp; Finance</h4>
-                        <p><em>University of Bamenda, Cameroon</em></p>
-                        <p>Major: Accounting and Finance</p>
-                    </div>
-                </div>
-            </div>
-
+            </ul>
         </div>
-    </section>
-    <!-- End Resume Section -->
+    </nav>
+
+    <div class="container-fluid" id="main">
+        <div class="row">
+            <div class="landing">
+                <div style="color: white;" class="col-md-6 landing_content">
+                    <div class="desc">
+                        <h2>Services</h2>
+                        <h4>What Can I do For You?</h4>
+                        <p>My aim is to make your business scalable and run
+                            efficiently to its full potential. I want to join forces
+                            with you to create the venture you have always
+                            envisioned and dreamed about, have it come to life
+                            and make it a reality for you. A business that
+                            people will be in awe of and will not stop talking
+                            about because you are breaking barriers, defying
+                            odds and turning negatives into positives. Are you
+                            ready to dive in and work with me?</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <?php include(ROOT_PATH . "/app/includes/footer.php") ?>
@@ -141,7 +89,7 @@ include("path.php");
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>

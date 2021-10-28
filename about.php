@@ -7,7 +7,7 @@ include("path.php");
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Nji Mbitaownu</title>
     <link rel="shortcut icon" href="assets/img/shortcut_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -23,14 +23,14 @@ include("path.php");
 
 
     <!-- Open Sans Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/about_1024px.css">
     <link rel="stylesheet" media="screen and (min-device-width: 1382px)" href="assets/css/about_1440px.css">
+    <link rel="stylesheet" href="assets/css/about_1024px.css">
 </head>
 
 <body>
@@ -57,7 +57,7 @@ include("path.php");
                     <a class="nav-link" href="resume.php">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://blog.mbitaownu.com/blog/">Blog</a>
+                    <a class="nav-link" href="https://blog.mbitaownu.com">Blog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.php">Contact</a>
@@ -123,55 +123,57 @@ include("path.php");
         <section id="resume-section">
             <div class="resume-section">
                 <h2>Resume</h2>
-                <div class="row">
-                    <div class="col-md-4 offset-1 categories" id="categories" data-aos="fade-up" data-aos-delay="100">
-                        <h3 class="resume-title">Most Recent Expereince</h3>
-                        <div class="resume-item">
-                            <h4>Incubator Manager</h4>
-                            <a href="https://sowc.alueducation.com/" style="color: cadetblue;" target="_blank">
-                                <p><em>School of Wildlife Conservation - ALU, Rwanda</em></p>
-                            </a>
-                            <p>Feb 2021 - Present</p>
-                            <hr>
-                        </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 offset-1 categories" id="categories" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="resume-title">Most Recent Expereince</h3>
+                            <div class="resume-item">
+                                <h4>Incubator Manager</h4>
+                                <a href="https://sowc.alueducation.com/" style="color: cadetblue;" target="_blank">
+                                    <p><em>School of Wildlife Conservation - ALU, Rwanda</em></p>
+                                </a>
+                                <p>Feb 2021 - Present</p>
+                                <hr>
+                            </div>
 
-                        <div class="resume-item">
-                            <h4>Course Facilitator</h4>
-                            <a href="https://alueducation.com/" style="color: cadetblue;" target="_blank">
-                                <p><em>African Leadership University, Rwanda</em></p>
-                            </a>
-                            <p><em>Jan 2020 - Present</em></p>
-                            <hr>
-                        </div>
+                            <div class="resume-item">
+                                <h4>Course Facilitator</h4>
+                                <a href="https://alueducation.com/" style="color: cadetblue;" target="_blank">
+                                    <p><em>African Leadership University, Rwanda</em></p>
+                                </a>
+                                <p><em>Jan 2020 - Present</em></p>
+                                <hr>
+                            </div>
 
-                        <div class="resume-item">
-                            <h4>Student Ventures Program Lead</h4>
-                            <a href="https://alueducation.com/" style="color: cadetblue;" target="_blank">
-                                <p><em>African Leadership University, Rwanda</em></p>
-                            </a>
-                            <p><em>Jan 2019 - Dec 2020</em></p>
+                            <div class="resume-item">
+                                <h4>Student Ventures Program Lead</h4>
+                                <a href="https://alueducation.com/" style="color: cadetblue;" target="_blank">
+                                    <p><em>African Leadership University, Rwanda</em></p>
+                                </a>
+                                <p><em>Jan 2019 - Dec 2020</em></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 offset-1 categories" id="categories" data-aos="fade-up">
-                        <h3 class="resume-title">Education</h3>
-                        <div class="resume-item">
-                            <h4>Master of Business Administration</h4>
-                            <p>Adventist University of Central Africa, Rwanda</p>
-                            <p>Major: Finance</p>
-                            <hr>
-                        </div>
+                        <div class="col-md-4 offset-1 categories" id="categories1" data-aos="fade-up">
+                            <h3 class="resume-title">Education</h3>
+                            <div class="resume-item">
+                                <h4>Master of Business Administration</h4>
+                                <p>Adventist University of Central Africa, Rwanda</p>
+                                <p>Major: Finance</p>
+                                <hr>
+                            </div>
 
-                        <div class="resume-item">
-                            <h4>Certified Public Accountancy (CPA)</h4>
-                            <p>Institute of Certified Public Accountants, Rwanda</p>
-                            <p>Ongoing</p>
-                            <hr>
-                        </div>
+                            <div class="resume-item">
+                                <h4>Certified Public Accountancy (CPA)</h4>
+                                <p>Institute of Certified Public Accountants, Rwanda</p>
+                                <p>Ongoing</p>
+                                <hr>
+                            </div>
 
-                        <div class="resume-item">
-                            <h4>Bachelors in Business Administration</h4>
-                            <p>University of Bamenda, Cameroon</p>
-                            <p>Major: Accounting and Finance</p>
+                            <div class="resume-item">
+                                <h4>Bachelors in Business Administration</h4>
+                                <p>University of Bamenda, Cameroon</p>
+                                <p>Major: Accounting and Finance</p>
+                            </div>
                         </div>
                     </div>
                 </div>
