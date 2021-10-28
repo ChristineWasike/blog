@@ -1,0 +1,120 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    color: rgb(10, 10, 10);
+    font-family: 'Lora', serif;
+    letter-spacing: .2px;
+}
+
+#about-me {
+    margin-top: 2em;
+}
+
+.about-me {
+    margin-top: -2em;
+    margin-bottom: -15px;
+    min-height: 50%;
+}
+
+.about-me h3 {
+    font-weight: bolder;
+    text-decoration: underline dashed;
+    text-underline-position: under;
+    letter-spacing: 2px;
+}
+
+.about-me p {
+    font-size: x-large;
+}
+
+.about-me .description {
+    padding-top: 4rem;
+    padding-right: 3rem;
+    display: block;
+}
+
+.about-me .description .contents {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.about-me .image {
+    text-align: center;
+}
+
+#about_image {
+    max-height: 30rem;
+    border-radius: 10px;
+}
+
+#more-about {
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.more-about p {
+    font-size: x-large;
+}
+
+#resume-section {
+    margin-top: 2%;
+    background-color: rgb(10, 10, 10);
+    color: rgb(255, 255, 255);
+    min-height: 50%;
+    padding-bottom: 3%;
+}
+
+.resume-section {
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.resume-section h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+.resume-section .categories {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(41, 40, 40)
+}
+
+.resume-section .resume-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.resume-item h4 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.resume-item p {
+    margin: 0
+}
+
+.resume-item hr {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+@media screen and (max-width:425px) {
+    .resume-section {
+        padding-right: 2%;
+        padding-top: 2%;
+        padding-left: 3%;
+    }
+
+    #categories {
+        margin-bottom: 2%;
+    }
+
+    
+}

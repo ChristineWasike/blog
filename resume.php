@@ -81,29 +81,151 @@ include("path.php");
             </div>
         </div>
 
-        <div class="services">
-            <div class="row">
-                <div class="col-md-4 card-shell">
-                    <div class="card text-white" style="width: 22rem;">
-                        <div class="card-body card_image">
-                            <h5 class="card-title">New Venture Development</h5>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">A startup service where I assist new
-                                emerging businesses through the new
-                                venture development process. As a coach
-                                and trainer I take them through each step
-                                and evaluate their progress and fine tune
-                                their business idea into a market ready
-                                venture which is solving a problem in
-                                society. This is a six month long
-                                bootcamp designed to launch businesses. <a href="#">Learn more</a></p>
-                            
-                        </div>
+        <div class="row services">
+            <div class="col-md-4 card-shell">
+                <div class="card text-white" style="width: 22rem;">
+                    <div class="card-body card_image" id="services1">
+                        <h5 class="card-title">Entrepreneurial <br>Finance</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">A startup service where I assist new
+                            emerging businesses through the new
+                            venture development process. As a coach
+                            and trainer I take them through each step
+                            and evaluate their progress and fine tune
+                            their business idea into a market ready
+                            venture which is solving a problem in
+                            society. This is a six month long
+                            bootcamp designed to launch businesses. <br><a href="#">Learn more</a></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 card-shell">
+                <div class="card text-white" style="width: 22rem;">
+                    <div class="card-body card_image" id="services2">
+                        <h5 class="card-title">New Venture <br>Development</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">A startup service where I assist new
+                            emerging businesses through the new
+                            venture development process. As a coach
+                            and trainer I take them through each step
+                            and evaluate their progress and fine tune
+                            their business idea into a market ready
+                            venture which is solving a problem in
+                            society. This is a six month long
+                            bootcamp designed to launch businesses. <br><a href="#">Learn more</a></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 card-shell">
+                <div class="card text-white" style="width: 22rem;">
+                    <div class="card-body card_image" id="services3">
+                        <h5 class="card-title">Incubator <br>Development</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">I offer this service to incubator
+                            programmes or organisations that want
+                            or host incubators for businesses and
+                            startups. Where I work with them as an
+                            incubator developer and give them a
+                            blueprint document of how the
+                            programme is to be structured, with what
+                            resources and how to manage them. I
+                            also manage the program if institutions
+                            want that service added too <br><a href="#">Learn more</a></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 card-shell">
+                <div class="card text-white" style="width: 22rem;">
+                    <div class="card-body card_image" id="services4">
+                        <h5 class="card-title">Facilitation</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">A startup service where I assist new
+                            emerging businesses through the new
+                            venture development process. As a coach
+                            and trainer I take them through each step
+                            and evaluate their progress and fine tune
+                            their business idea into a market ready
+                            venture which is solving a problem in
+                            society. This is a six month long
+                            bootcamp designed to launch businesses. <br><a href="#">Learn more</a></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 card-shell">
+                <div class="card text-white" style="width: 22rem;">
+                    <div class="card-body card_image" id="services5">
+                        <h5 class="card-title">Business <br>Research</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">A startup service where I assist new
+                            emerging businesses through the new
+                            venture development process. As a coach
+                            and trainer I take them through each step
+                            and evaluate their progress and fine tune
+                            their business idea into a market ready
+                            venture which is solving a problem in
+                            society. This is a six month long
+                            bootcamp designed to launch businesses. <br><a href="#">Learn more</a></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 card-shell">
+                <div class="card text-white" style="width: 22rem;">
+                    <div class="card-body card_image" id="services6">
+                        <h5 class="card-title">Startup <br>Fundraising</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">A startup service where I assist new
+                            emerging businesses through the new
+                            venture development process. As a coach
+                            and trainer I take them through each step
+                            and evaluate their progress and fine tune
+                            their business idea into a market ready
+                            venture which is solving a problem in
+                            society. This is a six month long
+                            bootcamp designed to launch businesses. <br><a href="#">Learn more</a></p>
+
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="row project">
+            <div class="form col-md-6 offset-3">
+                <h2>Have A Project? Let's Talk</h2>
+                <form action="https://formspree.io/f/xjvjyjln" method="POST">
+                    <div class="form-group">
+                        <!-- <label for="fullName">Full Name</label> -->
+                        <input name="name" type="name" class="form-control" id="fullName" aria-describedby="nameHelp" placeholder="Full name">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="exampleInputEmail1">Email address</label> -->
+                        <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">All emails are kept private.</small>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="message">Your message</label> -->
+                        <textarea name="message" class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" id="project_button" class="btn btn-dark">Submit</button>
+                </form>
+            </div>
+        </div>
+
     </div>
 
     <!-- Footer -->

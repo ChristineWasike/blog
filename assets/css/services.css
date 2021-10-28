@@ -1,0 +1,264 @@
+.landing {
+    background: linear-gradient(0deg, rgba(10, 10, 10, 0.4), rgba(25, 25, 25, 0.4)), url(../img/services.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+}
+
+.landing_content {
+    padding-top: 5vh;
+    padding-left: 5vw;
+}
+
+.desc h2 {
+    text-decoration: underline;
+}
+
+.desc h4 {
+    /* font-size: ; */
+    font-weight: bold;
+    color: #CDA750;
+}
+
+.desc p {
+    font-size: 1.2rem;
+}
+
+.services {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgba(255, 255, 255)
+}
+
+/* Lmao this actually worked */
+
+.services .card-shell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .card-shell .card {
+    background-color: rgb(194, 194, 194) !important;
+    margin-bottom: 5%;
+}
+
+.services .card-shell .card .card-text{
+    color: black;
+}
+
+.services .card-shell .card .card-text a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#services1 {
+    background: linear-gradient(0deg, rgba(10, 10, 10, 0.4), rgba(25, 25, 25, 0.4)), url(../img/services1.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    height: 12em;
+    background-size: 100%;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+#services2 {
+    background: linear-gradient(0deg, rgba(10, 10, 10, 0.4), rgba(25, 25, 25, 0.4)), url(../img/services2.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    height: 12em;
+    background-size: 100%;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+#services3 {
+    background: linear-gradient(0deg, rgba(10, 10, 10, 0.4), rgba(25, 25, 25, 0.4)), url(../img/services3.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    height: 12em;
+    background-size: 100%;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+#services4 {
+    background: linear-gradient(0deg, rgba(10, 10, 10, 0.4), rgba(25, 25, 25, 0.4)), url(../img/services4.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    height: 12em;
+    background-size: 100%;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+#services5 {
+    background: linear-gradient(0deg, rgba(10, 10, 10, 0.4), rgba(25, 25, 25, 0.4)), url(../img/services5.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    height: 12em;
+    background-size: 100%;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+#services6 {
+    background: linear-gradient(0deg, rgba(10, 10, 10, 0.4), rgba(25, 25, 25, 0.4)), url(../img/service6.jpeg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    height: 12em;
+    background-size: 100%;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+#services1:hover {
+    background-size: 120%;
+    cursor: pointer;
+}
+
+#services2:hover {
+    background-size: 120%;
+    cursor: pointer;
+}
+
+#services3:hover {
+    background-size: 120%;
+    cursor: pointer;
+}
+
+#services4:hover {
+    background-size: 120%;
+    cursor: pointer;
+}
+
+#services5:hover {
+    background-size: 120%;
+    cursor: pointer;
+}
+
+#services6:hover {
+    background-size: 120%;
+    cursor: pointer;
+}
+
+.services .card_image h5 {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.project {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 70vh;
+}
+
+.project .form h2 {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 2%
+}
+
+.project .form .form-group input, .project .form .form-group textarea {
+    font-size: large;
+    font-weight: 600;
+}
+
+#project_button {
+    background-color: #CDA750 !important;
+}
+
+@media screen and (max-width: 1382px) {
+    .landing {
+        background: linear-gradient(0deg, rgba(10, 10, 10, 0.4), rgba(25, 25, 25, 0.4)), url(../img/services1.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        height: 92vh;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .landing {
+        background: linear-gradient(0deg, rgba(10, 10, 10, 0.4), rgba(25, 25, 25, 0.4)), url(../img/services2.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        height: 92vh;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        position: relative;
+    }
+    .services .card-shell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (min-width: 1382px) {
+    .landing {
+        height: 80vh;
+    }
+    .desc h2 {
+        font-size: 3rem;
+        text-decoration: underline;
+    }
+    .desc p {
+        font-size: 1.5rem;
+    }
+    .project {
+        height: 40vh;
+    }
+}
