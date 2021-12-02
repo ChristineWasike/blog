@@ -54,7 +54,7 @@ include(ROOT_PATH . "/app/controllers/posts.php");
 
                     <div class="form-group">
                         <label for="body">Body</label>
-                        <textarea name="body" id="body"><?php echo $title ?></textarea>
+                        <textarea name="body" id="body"><?php echo $body ?></textarea>
                     </div>
 
                     <div class="form-group">
