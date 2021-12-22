@@ -96,6 +96,16 @@ header .menu-toggle {
     margin-right: 5px;
 }
 
+.nav-item a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #CDA750;
+}
+
+.nav-item a:hover {
+    color: #b19450
+}
+
 .navbar-brand img {
     height: 30%;
     width: 30%;
