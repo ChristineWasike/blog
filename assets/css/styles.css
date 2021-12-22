@@ -152,6 +152,20 @@ header .menu-toggle {
     font-size: 60px;
 }
 
+
+.dec h4 {
+    font-size: 2.0rem;
+}
+
+.dec p {
+    font-size: 1.2rem;
+}
+
+.desc h3 {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -173,10 +187,10 @@ footer {
 }
 
 #twitter {
-  margin-top: 1%;
+    margin-top: 1%;
 }
 
-.footer_socials{
+.footer_socials {
     text-align: right;
 }
 
@@ -184,6 +198,7 @@ footer {
     .overlay a {
         font-size: 20px
     }
+
     .overlay .closebtn {
         font-size: 40px;
         top: 15px;
@@ -210,10 +225,12 @@ footer {
     #navbarNav {
         float: right;
     }
+
     .logo {
         margin-right: 0px;
         padding: 0px 0px;
     }
+
     .logo img {
         height: 40%;
         width: 40%;

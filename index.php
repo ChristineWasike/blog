@@ -39,13 +39,12 @@ $posts = getPublishedPosts();
             <div class="landing">
                 <div style="color: white;" class="col-md-6 ml-auto landing_content">
                     <div class="desc">
-                        <h4 style="font-size: 2.0rem;">WELCOME</h4>
-                        <h3 style="font-size: 2.3rem; font-weight: bold;">
-                            I am Nji Mbitaownu</h3>
-                        <p style="font-size: 1.2rem;">I'm an <span style="color:#CDA750;">Entrepreneurial Leader</span></p>
-                        <p style="font-size: 1.2rem;">Are you looking to scale your startup or <br>
+                        <h4>WELCOME</h4>
+                        <h3>I am Nji Mbitaownu</h3>
+                        <p>I'm an <span style="color:#CDA750;">Entrepreneurial Leader</span></p>
+                        <p>Are you looking to scale your startup or <br>
                             have an idea but don't know where to <br>
-                            begin? Let me help you find your startup's <br>
+                            begin? Let me help you find your startup's <br>x
                             market-fit and economic engine.</p>
                         <a type="button submit" class="btn learn-more" href="about.php">Learn More</a>
                     </div>

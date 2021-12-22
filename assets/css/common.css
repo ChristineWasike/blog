@@ -57,6 +57,19 @@ body {
   font-size: 60px;
 }
 
+.desc h4{
+  font-size: 2.0rem;
+}
+
+.desc p{
+  font-size: 1.2rem;
+}
+
+.desc h3 {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
 @media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px
