@@ -44,7 +44,7 @@ $posts = getPublishedPosts();
                         <p>I'm an <span style="color:#CDA750;">Entrepreneurial Leader</span></p>
                         <p>Are you looking to scale your startup or <br>
                             have an idea but don't know where to <br>
-                            begin? Let me help you find your startup's <br>x
+                            begin? Let me help you find your startup's <br>
                             market-fit and economic engine.</p>
                         <a type="button submit" class="btn learn-more" href="about.php">Learn More</a>
                     </div>

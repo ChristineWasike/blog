@@ -46,7 +46,7 @@ include("path.php");
           <a class="nav-link" href="about.php">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="resume.php">Services</a>
+          <a class="nav-link" href="services.php">Services</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://blog.mbitaownu.com">Blog</a>
