@@ -26,7 +26,7 @@ include("path.php");
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class=" sticky-top navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="index.php">
       <picture>
         <source media="(min-width:650px)" srcset="assets/img/mwl_logo.png">
