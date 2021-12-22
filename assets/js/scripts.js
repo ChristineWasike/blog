@@ -4,7 +4,7 @@ $(document).ready(function(){
         $('.nav ul').toggleClass('showing');
     };
 
-})
+}) 
 
 ClassicEditor
 .create( document.querySelector( '#body' ), {
