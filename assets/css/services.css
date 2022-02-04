@@ -49,11 +49,11 @@
     margin-bottom: 5%;
 }
 
-.services .card-shell .card .card-text{
+.services .card-shell .card .card-text {
     color: black;
 }
 
-.services .card-shell .card .card-text a{
+.services .card-shell .card .card-text a {
     color: black;
     font-weight: bold;
     text-decoration: none;
@@ -227,6 +227,9 @@
 }
 
 @media screen and (max-width: 425px) {
+    .offset-3 {
+        margin-left: 0%;
+    }
     .landing {
         background: linear-gradient(0deg, rgba(10, 10, 10, 0.4), rgba(25, 25, 25, 0.4)), url(../img/services2.svg);
         background-repeat: no-repeat;
@@ -239,6 +242,7 @@
         align-items: center;
         position: relative;
     }
+
     .services .card-shell {
         display: flex;
         align-items: center;
@@ -247,18 +251,33 @@
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .project {
+        height: 40vh !;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .project {
+        height: 40vh ! important;
+    }
+}
+
 @media screen and (min-width: 1382px) {
+ 
+
     .landing {
         height: 80vh;
     }
+
     .desc h2 {
         font-size: 3rem;
         text-decoration: underline;
     }
+
     .desc p {
         font-size: 1.5rem;
     }
-    .project {
-        height: 40vh;
-    }
+
+
 }

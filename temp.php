@@ -1,8 +1,8 @@
 <?php
 include("path.php");
-include(ROOT_PATH . "/app/controllers/topics.php");
+// include(ROOT_PATH . "/app/controllers/topics.php");
 
-$posts = getPublishedPosts();
+// $posts = getPublishedPosts();
 
 ?>
 <!DOCTYPE html>
@@ -61,7 +61,7 @@ $posts = getPublishedPosts();
                     <br>
                     <h2 style="font-size: 1.5rem; font-weight: bold; color: #CDA750;">I have worked with</h2>
                     <br>
-                    <a href="https://www.instagram.com/njimmawah/" target="_blank"><img src="assets/img/new_instagram.svg" alt="instagram" class="social-media"></a>
+                    <a href="https://www.instagram.com/njimmawah/" target="_blank"><img src="assets/img/user.png"ram.svg" alt="instagram" class="social-media"></a>
                     <a href="https://www.instagram.com/njimmawah/" target="_blank"><img src="assets/img/new_instagram.svg" alt="instagram" class="social-media"></a>
                     <a href="https://www.instagram.com/njimmawah/" target="_blank"><img src="assets/img/new_instagram.svg" alt="instagram" class="social-media"></a>
                     <a href="https://www.instagram.com/njimmawah/" target="_blank"><img src="assets/img/new_instagram.svg" alt="instagram" class="social-media"></a>
@@ -86,7 +86,7 @@ $posts = getPublishedPosts();
                                 <div class="card text-white bg-dark mb-3" id="chidi-card" style="max-width: 30rem;">
                                     <div class="card-header">
                                         <div id="testimonial_card" class="row" style="padding-left: 1rem;">
-                                            <img src="assets/img/chidi.jpeg" alt="Chidi" style="border-radius: 50%; height: 5rem; width: 5rem;">
+                                            <img src="assets/img/user.png"" alt="Chidi" style="border-radius: 50%; height: 5rem; width: 5rem;">
                                             <p style="text-align: left; margin-left: 2%; padding-top: .4rem;">Name
                                                 <br>Organisation, Position
                                             </p>
@@ -107,7 +107,7 @@ $posts = getPublishedPosts();
                                 <div class="card text-white bg-dark mb-3" id="tolu-card" style="max-width: 30rem;">
                                     <div class="card-header">
                                         <div id="testimonial_card" class="row" style="padding-left: 1rem;">
-                                            <img src="assets/img/tolu.jpeg" alt="Tolu" style="border-radius: 50%; height: 5rem; width: 5rem;">
+                                            <img src="assets/img/user.png" alt="Tolu" style="border-radius: 50%; height: 5rem; width: 5rem;">
                                             <p style="text-align: left; margin-left: 2%; padding-top: .4rem;">Name
                                                 <br>Organisation, Position
                                             </p>
@@ -127,7 +127,7 @@ $posts = getPublishedPosts();
                                 <div class="card text-white bg-dark mb-3" id="david-card" style="max-width: 30rem;">
                                     <div class="card-header">
                                         <div id="testimonial_card" class="row" style="padding-left: 1rem;">
-                                            <img src="assets/img/david.jpeg" alt="David" style="border-radius: 50%; height: 5rem; width: 5rem;">
+                                            <img src="assets/img/user.png"" alt="David" style="border-radius: 50%; height: 5rem; width: 5rem;">
                                             <p style="text-align: left; margin-left: 2%; padding-top: .4rem;">Name
                                                 <br>Organisation, Position
                                             </p>
