@@ -373,6 +373,12 @@ a:hover {
   #chidi-card, #tolu-card, #david-card {
     max-width: 40rem;
     /* width: 100%; */
+    
+  }
+
+  #testimonial_card img{
+    width: 36px !important;
+    height: 36px !important;
   }
 
   .landing {
