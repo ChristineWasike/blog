@@ -1,0 +1,15 @@
+.navbar {
+    background-color: rgb(10, 10, 10);
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+#heading{
+    margin-bottom:1em;
+}
+
+#form h4{
+    text-align: center;
+}
